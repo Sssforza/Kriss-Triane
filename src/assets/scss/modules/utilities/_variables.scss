@@ -1,0 +1,40 @@
+// Img_url
+$imgUrl: '/dist/img/';
+
+// Breakpoints
+$lg: 1024px;
+$xs: 540px;
+
+// Colors
+$white: #FFFFFF;
+
+$transition: all .3s;
+
+
+%container {}
+
+%link {
+	pointer-events: none;
+
+	@media (max-width:$lg) {
+		pointer-events: auto;
+	}
+}
+
+%imgBg {
+	flex: none;
+
+	background: {
+		repeat: no-repeat;
+		size: cover;
+		position: center;
+	}
+}
+
+%stretch {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
