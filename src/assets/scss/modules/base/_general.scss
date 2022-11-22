@@ -5,6 +5,20 @@ body {
     }
 
     color: $txt;
+
+    &.openMenu {
+
+        overflow: hidden;
+
+        .headerMenu {
+            opacity: 1;
+            pointer-events: auto;
+
+            &__content {
+                transform: translate(0, 0);
+            }
+        }
+    }
 }
 
 svg {

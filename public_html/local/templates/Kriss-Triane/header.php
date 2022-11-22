@@ -31,7 +31,7 @@
                             <a href="#" class="header__call">Заказать звонок</a>
                         </div>
                     </div>
-                    <div class="hamburger">
+                    <div class="hamburger hamburger_js">
                         <div class="hamburger__box">
                             <div class="hamburger__inner"></div>
                         </div>
@@ -39,3 +39,54 @@
                 </div>
             </div>
         </header>
+        <div class="headerMenu">
+            <div class="headerMenu__content">
+                <div class="headerMenu__top">
+                    <div class="headerMenu__logo">
+                        <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/logo.svg';?>
+                    </div>
+                    <div class="hamburger hamburger_js">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="headerMenu__nav">
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">О нас</a>
+                    </li>
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">Услуги</a>
+                    </li>
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">Цены</a>
+                    </li>
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">Акции</a>
+                    </li>
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">Отзывы</a>
+                    </li>
+                    <li class="headerMenu__li">
+                        <a href="#" class="headerMenu__reference">Контакты</a>
+                    </li>
+                </ul>
+                <div class="headerMenu__wrapper">
+                    <div class="headerMenu__box">
+                        <div class="headerMenu__top">
+                            <a href="tel:+7(3812)220011" class="headerMenu__tel">+7 (3812) 22-00-11</a>
+                        </div>
+                        <div class="headerMenu__bottom">
+                            <a href="#" class="headerMenu__link">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="headerMenu__box">
+                        <div class="headerMenu__top">Омск, ул. Волочаевская, 15/2</div>
+                        <div class="headerMenu__bottom">Ежедневно с 9:00 до 21:00</div>
+                    </div>
+                </div>
+                <div class="headerMenu__flower" style="background-image:url(/dist/img/flower.png)"></div>
+            </div>
+        </div>
+        
+        

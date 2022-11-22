@@ -68,10 +68,10 @@
 
 .hamburger {
     display: inline-block;
-    cursor: pointer;
     transition-timing-function: linear;
     transition-duration: .15s;
     transition-property: opacity, filter;
+    cursor: pointer;
 
     &__box {
         position: relative;
@@ -90,6 +90,8 @@
         transition-duration: .15s;
         transition-property: transform;
         background-color: $white;
+        transition: $transition;
+        z-index: 5;
     }
 
     &__inner {
@@ -121,6 +123,7 @@
     }
 
     &.active {
+
         .hamburger__inner {
             background-color: transparent !important;
             transform: rotate(90deg);
@@ -130,13 +133,109 @@
                 top: 0;
                 transition: top 75ms ease-out .1s, transform 75ms cubic-bezier(.215, .61, .355, 1) .15s;
                 transform: rotate(-45deg);
+                background-color: $blue;
             }
 
             &:after {
                 bottom: 0;
                 transition: bottom 75ms ease-out .1s, transform 75ms cubic-bezier(.215, .61, .355, 1) .15s;
                 transform: rotate(45deg);
+                background-color: $blue;
             }
         }
+    }
+}
+
+.headerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(87, 80, 80, 0.7);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+
+    &__content {
+        padding: 40px 40px 40px 60px;
+        width: 479px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: $white;
+        transform: translate(100%, 0);
+        transition: $transition;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        svg {
+            .color {
+                fill: $blue;
+            }
+        }
+    }
+
+    &__li {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__reference {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $blue;
+    }
+
+    &__box {
+        margin-top: 40px;
+    }
+
+    &__top {
+        font-size: 18px;
+        line-height: 25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $txt;
+    }
+
+    &__bottom {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $txt50;
+    }
+
+    &__tel {
+        @extend %link;
+    }
+
+    &__link {
+        border-bottom: 1px solid $txt50;
+    }
+
+    &__flower {
+        width: 448px;
+        height: 448px;
+        position: absolute;
+        top: 18%;
+        left: 40%;
+        flex: none;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }

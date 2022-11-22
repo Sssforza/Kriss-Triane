@@ -90,7 +90,7 @@
 
 __webpack_require__(1);
 __webpack_require__(3);
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
@@ -384,9 +384,15 @@ module.exports = __webpack_amd_options__;
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _blocks_header_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 //📁 /node_modules/  jquery 
 
-global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
+global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁 /assets/js/blocks  header
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_1__["hamburgerMenu"])();
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
 /***/ }),
@@ -11305,6 +11311,35 @@ return jQuery;
 
 /***/ }),
 /* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hamburgerMenu", function() { return hamburgerMenu; });
+// open/close hamburger menu
+function hamburgerMenu() {
+  if (document.querySelector('.hamburger_js')) {
+    var hamburger = document.querySelectorAll('.hamburger_js');
+    hamburger.forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        if (item.classList.contains('active')) {
+          hamburger.forEach(function (item) {
+            item.classList.remove('active');
+          });
+          document.body.classList.remove('openMenu');
+        } else {
+          hamburger.forEach(function (item) {
+            item.classList.add('active');
+          });
+          document.body.classList.add('openMenu');
+        }
+      });
+    });
+  }
+}
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports) {
 
 var lg = 1024;
