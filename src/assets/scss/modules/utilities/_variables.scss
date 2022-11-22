@@ -8,11 +8,16 @@ $xs: 540px;
 // Colors
 $white: #FFFFFF;
 $txt: #575050;
+$border: rgba(255, 255, 255, 0.1);
+$white_opacity6: rgba(255, 255, 255, 0.6);
+$btn_bg: linear-gradient(88.16deg, #678EC9 3.88%, #6390D5 99.3%);
 
 $transition: all .3s;
 
 
-%container {}
+%container {
+	padding: 0 30px;
+}
 
 %link {
 	pointer-events: none;

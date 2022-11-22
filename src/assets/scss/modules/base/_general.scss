@@ -6,3 +6,21 @@ body {
 
     color: $txt;
 }
+
+svg {
+    display: block;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $white;
+    background: $btn_bg;
+    border-radius: 50px;
+    font-family: 'Tenor Sans';
+}
