@@ -1,3 +1,142 @@
 .header {
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    border-bottom: 1px solid $border;
+    @extend %container;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__block {
+        padding: 30px 40px;
+        width: 50%;
+        height: 116px;
+
+        &:not(:last-child) {
+            border-right: 1px solid $border;
+        }
+
+        &_right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 60px;
+        }
+    }
+
+    &__wrapper {
+        text-align: right;
+    }
+
+    &__address,
+    &__link {
+        font-size: 18px;
+        line-height: 25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $white;
+    }
+
+    &__working,
+    &__call {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $white_opacity6;
+    }
+
+    &__link {
+        @extend %link;
+    }
+
+    &__call {
+        border-bottom: 1px solid $white_opacity6;
+    }
+
+    &__logo {
+        svg {
+            margin: 0 auto;
+        }
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity, filter;
+
+    &__box {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 32px;
+    }
+
+    &__inner,
+    &__inner:after,
+    &__inner:before {
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        background-color: $white;
+    }
+
+    &__inner {
+        top: 50%;
+        display: block;
+        transition: transform 75ms cubic-bezier(.55, .055, .675, .19) .15s, background-color 0s linear 75ms;
+
+        &:after,
+        &:before {
+            display: block;
+            content: "";
+        }
+    }
+
+    &__inner {
+
+        &:before {
+            top: -14px;
+            transition: top 75ms ease-in 75ms, transform 75ms cubic-bezier(.55, .055, .675, .19) 0s;
+        }
+    }
+
+    &__inner {
+
+        &:after {
+            bottom: -14px;
+            transition: bottom 75ms ease-in 75ms, transform 75ms cubic-bezier(.55, .055, .675, .19) 0s;
+        }
+    }
+
+    &.active {
+        .hamburger__inner {
+            background-color: transparent !important;
+            transform: rotate(90deg);
+            transition: transform 75ms cubic-bezier(.215, .61, .355, 1) 0s, background-color 0s linear .15s;
+
+            &:before {
+                top: 0;
+                transition: top 75ms ease-out .1s, transform 75ms cubic-bezier(.215, .61, .355, 1) .15s;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                bottom: 0;
+                transition: bottom 75ms ease-out .1s, transform 75ms cubic-bezier(.215, .61, .355, 1) .15s;
+                transform: rotate(45deg);
+            }
+        }
+    }
 }
