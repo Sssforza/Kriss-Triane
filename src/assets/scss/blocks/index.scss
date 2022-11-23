@@ -143,12 +143,6 @@
 .programsSliider {
     position: relative;
 
-    &.hide {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
-    }
-
     &__content {
         margin-left: 117px;
     }
@@ -289,6 +283,14 @@
         line-height: 24px;
         color: $blue;
         font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    
+    &.hide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
     }
 
     .slideArrows {
