@@ -1,3 +1,119 @@
 .footer {
-    
+    margin-top: 160px;
+
+    &__box {
+        padding: 0 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_bottom {
+            margin-top: 100px;
+            padding-top: 46px;
+            padding-bottom: 41px;
+            background: $f2;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrap {
+        &:nth-child(2) {
+            margin-left: 72px;
+        }
+
+        &:last-child {
+            margin-left: 108px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 53px;
+        color: $txt;
+        font-family: 'Tenor Sans';
+    }
+
+    &__address,
+    &__tel {
+        font-size: 18px;
+        line-height: 27px;
+        color: $txt;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 27px;
+        color: $txt50;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        border-bottom: 1px solid $txt50;
+        transition: $transition;
+
+        &:hover {
+            color: $txt;
+            border-bottom: 1px solid $txt;
+        }
+    }
+
+    &__address,
+    &__tel,
+    &__reference {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__tel {
+        @extend %link;
+    }
+
+    &__img {
+        margin-top: 40px;
+    }
+
+    &__bg {
+        width: 100%;
+        height: 430px;
+        border-radius: 16px;
+        overflow: hidden;
+        @extend %imgBg;
+    }
+
+    &__logo {
+        svg {
+            .color {
+                fill: $blue;
+            }
+        }
+    }
+
+    &__policy,
+    &__KrissTriane {
+        font-size: 16px;
+        line-height: 24px;
+        color: $txt;
+        opacity: 0.3;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__politics {
+        text-align: right;
+    }
+
+    &__policy {
+        border-bottom: 1px solid transparent;
+        transition: $transition;
+
+        &:hover {
+            border-bottom: 1px solid rgba(87, 80, 80, 30%);
+        }
+    }
+
+    &__KrissTriane {
+        margin-top: 10px;
+    }
 }
