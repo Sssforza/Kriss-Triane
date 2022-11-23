@@ -284,7 +284,7 @@
         color: $blue;
         font-feature-settings: 'pnum' on, 'lnum' on;
     }
-    
+
     &.hide {
         position: absolute;
         top: 0;
@@ -343,5 +343,42 @@
                 zoom: 1;
             }
         }
+    }
+}
+
+.video {
+    margin-top: 140px;
+    width: 100vw;
+    height: 510px;
+    @extend %imgBg;
+
+    &__content {
+        margin: 0 auto;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 53px;
+        text-align: center;
+        color: $white;
+        font-family: 'Tenor Sans';
+    }
+
+    &__play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 102px;
+        height: 102px;
+        background: $blue;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }

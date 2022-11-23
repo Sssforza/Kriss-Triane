@@ -518,6 +518,14 @@
             </div>
         </div>
     </section>
+    <section class="video" style="background-image:url(/dist/img/videoBg.jpg)">
+        <div class="video__content">
+            <div class="video__title">Посмотрите видео о&nbsp;том, как проходит сеанс</div>
+            <div class="video__play">
+                <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/videoPlay.svg';?>
+            </div>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");
