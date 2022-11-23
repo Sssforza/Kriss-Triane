@@ -6,6 +6,7 @@
     <meta name="viewport" content="">
     <link rel="shortcut icon" href="/dist/img/favicons/favicon.ico" type="image/x-icon">
     <link rel='stylesheet' href="/dist/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="/dist/js/main.js"></script>
 </head>
 

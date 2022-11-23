@@ -5,6 +5,7 @@ body {
     }
 
     color: $txt;
+    overflow-x: hidden;
 
     &.openMenu {
 
@@ -38,4 +39,12 @@ svg {
     border-radius: 50px;
     font-family: 'Tenor Sans';
     cursor: pointer;
+}
+
+.sectionTitle {
+    font-size: 48px;
+    line-height: 53px;
+    color: $txt;
+    font-family: 'Tenor Sans';
+    text-align: center;
 }
