@@ -653,3 +653,67 @@
         }
     }
 }
+
+.certificate {
+    margin-top: 100px;
+    height: 556px;
+    background: linear-gradient(90deg, #584E48 2.75%, #615752 48.57%);
+
+    &__content {
+        display: flex;
+        height: 100%;
+    }
+
+    &__img {
+        width: 551px;
+        height: 100%;
+        @extend %imgBg;
+    }
+
+    &__info {
+        padding: 80px 55px 30px 30px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 53px;
+        color: $white;
+        font-family: 'Tenor Sans';
+    }
+
+    &__description {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white_opacity6;
+        width: 85%;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 265px;
+        height: 58px;
+    }
+
+    &__box {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 27px;
+        color: $white;
+        opacity: 0.5;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__result {
+        margin-top: 6px;
+        font-size: 24px;
+        line-height: 36px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $white;
+    }
+}

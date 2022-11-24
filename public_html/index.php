@@ -663,6 +663,34 @@
             </div>
         </div>
     </section>
+    <section class="certificate">
+        <div class="certificate__content">
+            <div class="certificate__info">
+                <div class="certificate__title">Подарочный сертификат</div>
+                <div class="certificate__description">
+                    Универсальный сертификат в&nbsp;Beauty gallery Kriss Triane&nbsp;&mdash; это лучший подарок для всех, 
+                    кто заботится о&nbsp;красоте и&nbsp;здоровье своего тела. Оформить сертификат онлайн можно 
+                    в&nbsp;электронном или физическом виде с&nbsp;курьерской доставкой лично адресату в&nbsp;течение дня.
+                </div>
+                <div class="btn certificate__btn">Заказать</div>
+                <div class="certificate__box">
+                    <div class="certificate__item">
+                        <div class="certificate__name">Номинал</div>
+                        <div class="certificate__result">от 5000 Р</div>
+                    </div>
+                    <div class="certificate__item">
+                        <div class="certificate__name">Формат</div>
+                        <div class="certificate__result">Электронный и физический</div>
+                    </div>
+                    <div class="certificate__item">
+                        <div class="certificate__name">Доставка</div>
+                        <div class="certificate__result">В течение дня</div>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate__img" style="background-image:url(/dist/img/certificateImg.jpg)"></div>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");
