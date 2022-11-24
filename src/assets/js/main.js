@@ -15,7 +15,7 @@ import { programsContentChange } from "./blocks/index.js";
 import { getDiscount } from "./blocks/validations.js";
 
 //📁 /assets/js/blocks  slick
-import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider } from "./blocks/slick.js";
+import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider, specialistSliider } from "./blocks/slick.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     programsSliider_individual();
     programsSliider_premium();
     reviewsSliider();
+    specialistSliider();
 
     getDiscount();
 

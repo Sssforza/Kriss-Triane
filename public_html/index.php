@@ -586,6 +586,83 @@
             </div>
         </div>
     </section>
+    <section class="reviews specialist">
+        <div class="reviews__content">
+            <div class="sectionTitle">Специалисты</div>
+            <div class="specialist__description">
+                На&nbsp;протяжении долгого времени отбирали самых талантливых и&nbsp;влюблённых в&nbsp;своё дело 
+                специалистов в&nbsp;SPA индустрии
+            </div>
+            <div class="specialist__slider specialistSliider_js">
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist1.jpg)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Шмелева Евгения</div>
+                        <div class="specialist__experience">Опыт работы 22 года</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist2.jpg)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Кочнева Ирина</div>
+                        <div class="specialist__experience">Опыт работы 33 года</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist3.png)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Комиссарова Елена</div>
+                        <div class="specialist__experience">Опыт работы 15 лет</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist1.jpg)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Шмелева Евгения</div>
+                        <div class="specialist__experience">Опыт работы 22 года</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist2.jpg)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Кочнева Ирина</div>
+                        <div class="specialist__experience">Опыт работы 33 года</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+                <div class="specialist__item">
+                    <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist3.png)"></div>
+                    <div class="specialist__box">
+                        <div class="specialist__name">Комиссарова Елена</div>
+                        <div class="specialist__experience">Опыт работы 15 лет</div>
+                        <div class="specialist__text">
+                            Ведущий специалист по&nbsp;аппаратным методикам коррекции тела. 
+                            Комплексно и&nbsp;всесторонне подходит к&nbsp;решению эстетических проблем.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");

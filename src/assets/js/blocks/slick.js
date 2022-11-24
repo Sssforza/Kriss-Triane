@@ -167,26 +167,17 @@ export function reviewsSliider() {
         slidesToShow: 5,
         variableWidth: true,
         arrows: false,
-        infinite: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
+        infinite: true
+    });
+};
+
+export function specialistSliider() {
+    const slickSpecialist = $(".specialistSliider_js");
+    slickSpecialist.slick({
+        centerMode: true,
+        slidesToShow: 3,
+        variableWidth: true,
+        arrows: false,
+        infinite: true
     });
 };

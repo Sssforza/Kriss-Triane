@@ -411,6 +411,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_individual"])();
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_premium"])();
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["reviewsSliider"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["specialistSliider"])();
   Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_4__["getDiscount"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
@@ -14477,6 +14478,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_individual", function() { return programsSliider_individual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_premium", function() { return programsSliider_premium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reviewsSliider", function() { return reviewsSliider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "specialistSliider", function() { return specialistSliider; });
 // programsSliiders
 function programsSliider_personal() {
   var slickProgramsPersonal = $(".programsSliider__personal_js");
@@ -14638,24 +14640,18 @@ function reviewsSliider() {
     slidesToShow: 5,
     variableWidth: true,
     arrows: false,
-    infinite: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }]
+    infinite: true
+  });
+}
+;
+function specialistSliider() {
+  var slickSpecialist = $(".specialistSliider_js");
+  slickSpecialist.slick({
+    centerMode: true,
+    slidesToShow: 3,
+    variableWidth: true,
+    arrows: false,
+    infinite: true
   });
 }
 ;
