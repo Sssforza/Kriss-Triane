@@ -158,3 +158,35 @@ export function programsSliider_premium() {
 
     }
 };
+
+export function reviewsSliider() {
+    const slickReviews = $(".reviewsSliider_js");
+    slickReviews.slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 5,
+        variableWidth: true,
+        arrows: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+};

@@ -526,6 +526,38 @@
             </div>
         </div>
     </section>
+    <section class="reviews">
+        <div class="reviews__content">
+            <div class="sectionTitle">Отзывы</div>
+            <div class="reviews__slider reviewsSliider_js">
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews13.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews12.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews11.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews1.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews2.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews3.png)"></div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews4.png)"></div>
+                </div>
+            </div>
+            <div class="reviews__box">
+                <a href="#" class="reviews__btn">Отзывы на Flamp</a>
+                <a href="#" class="reviews__btn">Отзывы в 2GIS</a>
+            </div>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");

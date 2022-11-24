@@ -12,7 +12,7 @@ import { hamburgerMenu } from "./blocks/header.js";
 import { programsContentChange } from "./blocks/index.js";
 
 //📁 /assets/js/blocks  slick
-import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium } from "./blocks/slick.js";
+import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider } from "./blocks/slick.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -24,5 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     programsSliider_forTwo();
     programsSliider_individual();
     programsSliider_premium();
+    reviewsSliider();
 
 });

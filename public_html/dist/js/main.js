@@ -407,6 +407,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_forTwo"])();
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_individual"])();
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_premium"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["reviewsSliider"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -14412,6 +14413,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_forTwo", function() { return programsSliider_forTwo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_individual", function() { return programsSliider_individual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_premium", function() { return programsSliider_premium; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reviewsSliider", function() { return reviewsSliider; });
 // programsSliiders
 function programsSliider_personal() {
   var slickProgramsPersonal = $(".programsSliider__personal_js");
@@ -14563,6 +14565,35 @@ function programsSliider_premium() {
       nextArrow: '<div class="slideArrows__next"><svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.4596 5.45962C26.7135 5.20578 26.7135 4.79422 26.4596 4.54038L22.323 0.403808C22.0692 0.149967 21.6576 0.149967 21.4038 0.403808C21.15 0.657649 21.15 1.06921 21.4038 1.32305L25.0808 5L21.4038 8.67696C21.15 8.9308 21.15 9.34236 21.4038 9.5962C21.6576 9.85004 22.0692 9.85004 22.323 9.5962L26.4596 5.45962ZM-5.68248e-08 5.65L26 5.65L26 4.35L5.68248e-08 4.35L-5.68248e-08 5.65Z" fill="#678EC9"/></svg></div>'
     });
   }
+}
+;
+function reviewsSliider() {
+  var slickReviews = $(".reviewsSliider_js");
+  slickReviews.slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 5,
+    variableWidth: true,
+    arrows: false,
+    infinite: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }]
+  });
 }
 ;
 
