@@ -691,6 +691,60 @@
             <div class="certificate__img" style="background-image:url(/dist/img/certificateImg.jpg)"></div>
         </div>
     </section>
+    <section class="etiquette">
+        <div class="etiquette__content">
+            <div class="etiquette__info">
+                <div class="etiquette__title">Ознакомьтесь <br>со&nbsp;SPA-этикетом нашего салона</div>
+                <div class="etiquette__description">
+                    <p>
+                        СПА-отдых&nbsp;&mdash; это маленький праздник для души и&nbsp;тела, который поможет забыть 
+                        о&nbsp;суёте городской жизни и&nbsp;погрузиться в&nbsp;атмосферу спокойствия и&nbsp;гармонии.
+                    </p>
+                    <p>
+                        В&nbsp;СПА-зоне мы&nbsp;просим соблюдать определённые правила уважения друг к&nbsp;другу
+                    </p>
+                </div>
+            </div>
+            <ul class="etiquette__list">
+                <li class="etiquette__item">
+                    <div class="etiquette__number">1</div>
+                    <div class="etiquette__text">Записывайтесь заранее</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">2</div>
+                    <div class="etiquette__text">Приходите за 10-15 минут до начала</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">3</div>
+                    <div class="etiquette__text">Мы предоставим все необходимое</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">4</div>
+                    <div class="etiquette__text">Сообщите об отказе</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">5</div>
+                    <div class="etiquette__text">Соблюдайте тишину</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">6</div>
+                    <div class="etiquette__text">Скажите, если дискомфортно</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">7</div>
+                    <div class="etiquette__text">Снимите украшения</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">8</div>
+                    <div class="etiquette__text">Подготовьтесь к процедуре</div>
+                </li>
+                <li class="etiquette__item">
+                    <div class="etiquette__number">9</div>
+                    <div class="etiquette__text">Будте вежливы</div>
+                </li>
+            </ul>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");
