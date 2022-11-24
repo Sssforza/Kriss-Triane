@@ -90,7 +90,7 @@
 
 __webpack_require__(1);
 __webpack_require__(3);
-module.exports = __webpack_require__(10);
+module.exports = __webpack_require__(11);
 
 
 /***/ }),
@@ -388,12 +388,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _blocks_header_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
 /* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var _blocks_validations_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
 //📁 /node_modules/  jquery 
 
 global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁 /node_modules/  slick 1.8.1
 
  //📁 /assets/js/blocks  header
+
+ //📁 /assets/js/blocks  index
 
  //📁 /assets/js/blocks  index
 
@@ -403,11 +406,12 @@ global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁
 document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_2__["hamburgerMenu"])();
   Object(_blocks_index_js__WEBPACK_IMPORTED_MODULE_3__["programsContentChange"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_personal"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_forTwo"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_individual"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["programsSliider_premium"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_4__["reviewsSliider"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_personal"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_forTwo"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_individual"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["programsSliider_premium"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_5__["reviewsSliider"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_4__["getDiscount"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -14409,6 +14413,65 @@ function programsContentChange() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDiscount", function() { return getDiscount; });
+function removeError(errors) {
+  for (var i = 0; i < errors.length; i++) {
+    errors[i].classList.remove('error');
+  }
+}
+
+function checkFields(fields) {
+  for (var i = 0; i < fields.length; i++) {
+    if (!fields[i].value) {
+      fields[i].parentNode.classList.add('error');
+    }
+  }
+}
+
+function validatePhone(input) {
+  if (input.value.length < 18) {
+    input.parentNode.classList.add('error');
+    return false;
+  } else {
+    input.parentNode.classList.remove('error');
+    return true;
+  }
+} // form discount 
+
+
+function getDiscount() {
+  if (document.querySelector('.getDiscount_js')) {
+    var form = document.querySelector('.getDiscount_js');
+    var input = form.querySelector('.tel');
+    var fields = form.querySelectorAll('.fileds_js');
+    var envelope = form.querySelectorAll('.envelopeInput');
+    var valid;
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var errors = form.querySelectorAll('.error');
+      removeError(errors);
+      checkFields(fields);
+      validatePhone(input);
+      envelope.forEach(function (item) {
+        if (item.classList.contains('error')) {
+          valid = false;
+          console.log('no fetch');
+        } else {
+          valid = true;
+          console.log('fetch');
+        }
+      });
+      console.log(valid);
+    });
+  }
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_personal", function() { return programsSliider_personal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_forTwo", function() { return programsSliider_forTwo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_individual", function() { return programsSliider_individual; });
@@ -14598,7 +14661,7 @@ function reviewsSliider() {
 ;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 var lg = 1024;

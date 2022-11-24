@@ -558,6 +558,34 @@
             </div>
         </div>
     </section>
+    <section class="discount">
+        <div class="discount__content">
+            <div class="discount__img" style="background-image:url(/dist/img/discountImg.jpg)"></div>
+            <div class="discount__info">
+                <div class="discount__title">Получите скидку&nbsp;15%</div>
+                <div class="discount__description">
+                    У&nbsp;вас есть уникальная возможность не&nbsp;только позаботиться о&nbsp;себе, <br>но&nbsp;и&nbsp;сделать это 
+                    по&nbsp;весьма привлекательным ценам. Запишитесь <br>на&nbsp;любую SPA-программу со&nbsp;скидкой&nbsp;15%.
+                </div>
+                <form action="" class="discount__form form getDiscount_js">
+                    <div class="discount__fileds">
+                        <div class="envelopeInput">
+                            <input type="text" name="user_name" placeholder="Имя" class="fileds_js">
+                            <span class="envelopeInput__warning">Введите корректное имя</span>
+                        </div>
+                        <div class="envelopeInput">
+                            <input type="number" name="user_telefon" placeholder="Телефон" class="fileds_js tel">
+                            <span class="envelopeInput__warning">Введите корректный телефон</span>
+                        </div>
+                    </div>
+                    <button class="btn discount__button">Отправить</button>
+                    <div class="discount__privacy">
+                        Нажимая &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь с&nbsp;условиями <br><a href="#">политики&nbsp;конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 <?
     require($_SERVER["DOCUMENT_ROOT"]."/local/templates/Kriss-Triane/footer.php");

@@ -11,6 +11,9 @@ import { hamburgerMenu } from "./blocks/header.js";
 //📁 /assets/js/blocks  index
 import { programsContentChange } from "./blocks/index.js";
 
+//📁 /assets/js/blocks  index
+import { getDiscount } from "./blocks/validations.js";
+
 //📁 /assets/js/blocks  slick
 import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider } from "./blocks/slick.js";
 
@@ -25,5 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     programsSliider_individual();
     programsSliider_premium();
     reviewsSliider();
+
+    getDiscount();
 
 });
