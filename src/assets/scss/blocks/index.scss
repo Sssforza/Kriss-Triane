@@ -550,7 +550,33 @@
     .slick-slide {
         margin: 0 20px;
         width: 214px;
+        opacity: 0.5;
+        transform: scale(0.65);
+        transition: all 0.5s;
+
+        &.slick-slide {
+            &:has(+ .slick-center) {
+                opacity: 0.8;
+                transform: scale(0.85);
+            }
+        }
+
+        &.slick-center {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+
+            &+.slick-slide {
+                opacity: 0.8;
+                transform: scale(0.85);
+
+                &+.slick-slide {
+                    opacity: 0.5;
+                    transform: scale(0.65);
+                }
+            }
+        }
     }
+
 }
 
 .discount {
@@ -644,7 +670,7 @@
 
     &__slider {
         margin: 40px auto 0;
-        width: 1104px;
+        width: 1292px;
     }
 
     &__item {
@@ -693,35 +719,22 @@
     .slick-slide {
         margin: 0 20px;
         width: 404px;
+        transition: all 0.6s !important;
     }
+
 
     .slick-active {
-        &.slick-slide {
-            width: 310px;
-        }
-
-        .specialist__item {
-            width: 310px;
-            opacity: 0.5;
-        }
-
-        .specialist__bg {
-            height: 323px;
-        }
+        opacity: 0.5;
+        transform: scale(0.8);
     }
 
-    .slick-current {
-        &.slick-slide {
-            width: 404px;
-        }
+    .slick-center {
+        opacity: 1;
+        transform: scale(1);
 
-        .specialist__item {
-            width: 404px;
-            opacity: 1;
-        }
-
-        .specialist__bg {
-            height: 420px;
+        &+.slick-active {
+            opacity: 0.5;
+            transform: scale(0.8);
         }
     }
 }

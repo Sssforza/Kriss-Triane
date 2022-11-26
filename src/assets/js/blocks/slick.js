@@ -161,13 +161,17 @@ export function programsSliider_premium() {
 
 export function reviewsSliider() {
     const slickReviews = $(".reviewsSliider_js");
+
     slickReviews.slick({
         centerMode: true,
-        centerPadding: '60px',
+        className: "center",
+        infinite: true,
+        centerPadding: "60px",
         slidesToShow: 5,
-        variableWidth: true,
+        swipeToSlide: true,
         arrows: false,
-        infinite: true
+        // initialSlide: 3,
+        // variableWidth: true
     });
 };
 

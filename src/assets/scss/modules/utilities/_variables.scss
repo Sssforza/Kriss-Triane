@@ -30,7 +30,7 @@ $transition: all .3s;
 %link {
 	pointer-events: none;
 
-	@media (max-width:$lg) {
+	@media (max-width:$md) {
 		pointer-events: auto;
 	}
 }

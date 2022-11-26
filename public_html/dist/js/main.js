@@ -16574,11 +16574,14 @@ function reviewsSliider() {
   var slickReviews = $(".reviewsSliider_js");
   slickReviews.slick({
     centerMode: true,
-    centerPadding: '60px',
+    className: "center",
+    infinite: true,
+    centerPadding: "60px",
     slidesToShow: 5,
-    variableWidth: true,
-    arrows: false,
-    infinite: true
+    swipeToSlide: true,
+    arrows: false // initialSlide: 3,
+    // variableWidth: true
+
   });
 }
 ;
