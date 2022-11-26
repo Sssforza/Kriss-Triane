@@ -29,7 +29,7 @@
                             <a href="tel:+7(3812)220011" class="header__link">+7 (3812) 22-00-11</a>
                         </div>
                         <div class="header__request">
-                            <a href="#" class="header__call">Заказать звонок</a>
+                            <a href="#popupRequestCall" class="header__call requestCall_js">Заказать звонок</a>
                         </div>
                     </div>
                     <div class="hamburger hamburger_js">
@@ -89,5 +89,29 @@
                 <div class="headerMenu__flower" style="background-image:url(/dist/img/flower.png)"></div>
             </div>
         </div>
-        
+        <div class="popup white-popup mfp-hide" id="popupRequestCall">
+            <div class="popup__close popupClose_js">
+                <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
+            </div>
+            <div class="popup__content">
+                <div class="popup__title">Заказать звонок</div>
+                <div class="popup__description">Заполните форму, и&nbsp;мы&nbsp;перезвоним <br>вам в&nbsp;ближайшее время</div>
+                <form action="" class="discount__form form formRequestCall_js">
+                    <div class="discount__fileds">
+                        <div class="envelopeInput">
+                            <input type="text" name="user_name" placeholder="Имя" class="fileds_js">
+                            <span class="envelopeInput__warning">Введите корректное имя</span>
+                        </div>
+                        <div class="envelopeInput">
+                            <input type="number" name="user_telefon" placeholder="Телефон" class="fileds_js tel">
+                            <span class="envelopeInput__warning">Введите корректный телефон</span>
+                        </div>
+                    </div>
+                    <button class="btn popup__button">Отправить</button>
+                    <div class="discount__privacy">
+                        Нажимая &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь с&nbsp;условиями <br><a href="#">политики&nbsp;конфиденциальности</a>
+                    </div>
+                </form>
+            </div>
+        </div>
         

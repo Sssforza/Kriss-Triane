@@ -177,3 +177,161 @@ input[type="number"]::-webkit-outer-spin-button {
         }
     }
 }
+
+//popup
+
+.mfp-bg {
+    background: rgba(87, 80, 80, 0.7) !important;
+    backdrop-filter: blur(2px);
+    opacity: 1 !important;
+}
+
+.mfp-close-btn-in .mfp-close {
+    display: none;
+}
+
+.popup {
+    position: relative;
+    margin: 20px auto;
+    max-width: 540px;
+
+    &__close {
+        position: absolute;
+        top: -30px;
+        right: -60px;
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                path {
+                    stroke: $blue;
+                }
+            }
+        }
+
+        svg {
+            path {
+                transition: $transition;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 40px 60px 60px;
+        background: $white;
+        border-radius: 20px;
+        z-index: 1;
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+        }
+
+        &::before {
+            width: 128px;
+            height: 98px;
+            top: 2px;
+            right: 0;
+
+            background: {
+                image: url($imgUrl + "formFlowerRight.png");
+                repeat: no-repeat;
+            }
+        }
+
+        &::after {
+            width: 171px;
+            height: 127px;
+            left: 0;
+            bottom: 66px;
+
+            background: {
+                image: url($imgUrl + "formFlowerLeft.png");
+                repeat: no-repeat;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: $txt;
+        font-family: 'Tenor Sans';
+    }
+
+    &__description {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 25px;
+        color: $txt50;
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__button {
+        margin: 40px auto 0;
+        width: 200px;
+        height: 50px;
+        background: $blue;
+    }
+
+    .envelopeInput {
+
+        &::before {
+            background: {
+                image: url($imgUrl + "errorBeige.png");
+            }
+        }
+
+        &__warning {
+            color: $txt;
+        }
+
+        input {
+            color: $txt50;
+            @include placeholder(16px, $txt50, 'Geometria');
+            border-bottom: 1px solid $txt50;
+
+            &:focus {
+                color: $txt;
+                border-bottom: 1px solid $txt;
+            }
+        }
+
+        &.error {
+            &::before {
+                opacity: 1;
+            }
+
+            input {
+                color: $txt;
+                border-bottom: 1px solid $txt;
+            }
+
+            span {
+                top: 8px;
+                height: auto;
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+
+    .discount {
+        &__privacy {
+            margin-top: 30px;
+            text-align: center;
+            color: $txt40;
+
+            a {
+                &:hover {
+                    border-bottom: 1px solid $txt40;
+                }
+            }
+        }
+    }
+}
