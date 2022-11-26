@@ -6,7 +6,7 @@ global.jQuery = global.$ = $;
 import 'slick-carousel';
 
 //📁 /assets/js/blocks  header
-import { hamburgerMenu } from "./blocks/header.js";
+import { hamburgerMenu, headerFixed } from "./blocks/header.js";
 
 //📁 /assets/js/blocks  index
 import { programsContentChange } from "./blocks/index.js";
@@ -20,6 +20,7 @@ import { programsSliider_personal, programsSliider_forTwo, programsSliider_indiv
 document.addEventListener("DOMContentLoaded", function () {
 
     hamburgerMenu();
+    headerFixed();
 
     programsContentChange();
 

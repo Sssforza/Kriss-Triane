@@ -4,7 +4,7 @@
 <link rel='stylesheet' href="/dist/css/blocks/index.css">
 
 <main class="main page_main">
-    <section class="banner">
+    <section class="banner firstBlock_js">
         <div class="banner__content" style="background-image:url(/dist/img/trash/mainBanner.jpg)">
             <div class="banner__main">
                 <div class="banner__spa">SPA в&nbsp;Kriss Trianе</div>

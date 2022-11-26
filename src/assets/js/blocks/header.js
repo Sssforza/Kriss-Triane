@@ -19,3 +19,19 @@ export function hamburgerMenu() {
         });
     }
 }
+
+// header fixed
+export function headerFixed() {
+    if (document.querySelector('.header')) {
+        let header = $('.header');
+        let firstBlock = $('.firstBlock_js');
+        let firstBlockHeight = firstBlock.height();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > firstBlockHeight) {
+                header.addClass('header_fixed');
+            } else {
+                header.removeClass('header_fixed');
+            }
+        });
+    }
+}

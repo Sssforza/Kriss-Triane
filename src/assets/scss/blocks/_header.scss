@@ -1,11 +1,11 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
     z-index: 5;
     border-bottom: 1px solid $border;
     @extend %container;
+    transition: $transition;
 
     &__content {
         display: flex;
@@ -69,6 +69,16 @@
             margin: 0 auto;
         }
     }
+
+    &_fixed {
+        .hamburger {
+            position: fixed;
+
+            &::after {
+                background: $blue;
+            }
+        }
+    }
 }
 
 .hamburger {
@@ -81,7 +91,7 @@
 
     &:hover {
         &::after {
-            background: $blue-hover;
+            background: $blue;
         }
     }
 
@@ -90,8 +100,8 @@
         position: absolute;
         top: -19px;
         right: -16px;
-        bottom: -17px;
-        left: -16px;
+        width: 72px;
+        height: 72px;
         border-radius: 50%;
         background: transparent;
         pointer-events: none;
