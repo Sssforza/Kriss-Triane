@@ -234,6 +234,11 @@
         line-height: 34px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $blue;
+        transition: $transition;
+
+        &:hover {
+            color: rgba(87, 80, 80, 0.7);
+        }
     }
 
     &__box {
@@ -261,6 +266,12 @@
 
     &__link {
         border-bottom: 1px solid $txt50;
+        transition: $transition;
+
+        &:hover {
+            color: $txt;
+            border-bottom: 1px solid $txt;
+        }
     }
 
     &__flower {
