@@ -89,8 +89,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-__webpack_require__(3);
-module.exports = __webpack_require__(13);
+module.exports = __webpack_require__(3);
 
 
 /***/ }),
@@ -388,16 +387,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var magnific_popup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
 /* harmony import */ var magnific_popup__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(magnific_popup__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _blocks_header_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
-/* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
-/* harmony import */ var _blocks_validations_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
-/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
-/* harmony import */ var _blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
+/* harmony import */ var _blocks_responsive__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8);
+/* harmony import */ var _blocks_responsive__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_responsive__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _blocks_header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
+/* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
+/* harmony import */ var _blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
+/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
+/* harmony import */ var _blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13);
 //📁 /node_modules/  jquery 
 
 global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁 /node_modules/  slick 1.8.1
 
  //📁 /node_modules/  magnific-popup 1.1.0
+
+ //📁 /assets/js/blocks  header
 
  //📁 /assets/js/blocks  header
 
@@ -411,20 +414,20 @@ global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_3__["hamburgerMenu"])();
-  Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_3__["headerFixed"])();
-  Object(_blocks_index_js__WEBPACK_IMPORTED_MODULE_4__["programsContentChange"])();
-  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_5__["getDiscount"])();
-  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_5__["formRequestCall"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["programsSliider_personal"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["programsSliider_forTwo"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["programsSliider_individual"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["programsSliider_premium"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["reviewsSliider"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["specialistSliider"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["requestCall"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["messageThanks"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["popupYoutube"])();
+  Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_4__["hamburgerMenu"])();
+  Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_4__["headerFixed"])();
+  Object(_blocks_index_js__WEBPACK_IMPORTED_MODULE_5__["programsContentChange"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__["getDiscount"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__["formRequestCall"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_personal"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_forTwo"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_individual"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_premium"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["reviewsSliider"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["specialistSliider"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["requestCall"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["messageThanks"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["popupYoutube"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -16222,6 +16225,23 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+var md = 1024;
+var xs = 540;
+console.log('resp');
+var viewport = $('meta[name="viewport"]');
+
+if (window.screen.availWidth <= md || device.tablet()) {
+  viewport.attr("content", "width=640");
+}
+
+if (window.screen.availWidth <= xs || device.mobile()) {
+  viewport.attr("content", "width=320");
+}
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16266,7 +16286,7 @@ function headerFixed() {
 }
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16299,7 +16319,7 @@ function programsContentChange() {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16386,7 +16406,7 @@ function formRequestCall() {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16575,7 +16595,7 @@ function specialistSliider() {
 ;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16624,22 +16644,6 @@ function messageThanks() {
   }
 }
 ;
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-var lg = 1024;
-var xs = 540;
-var viewport = $('meta[name="viewport"]');
-
-if (window.screen.availWidth <= lg || device.tablet()) {
-  viewport.attr("content", "width=1024");
-}
-
-if (window.screen.availWidth <= xs || device.mobile()) {
-  viewport.attr("content", "width=540");
-}
 
 /***/ })
 /******/ ]);

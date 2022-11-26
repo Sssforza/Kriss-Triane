@@ -9,6 +9,9 @@ import 'slick-carousel';
 import 'magnific-popup';
 
 //📁 /assets/js/blocks  header
+import {} from "./blocks/responsive";
+
+//📁 /assets/js/blocks  header
 import { hamburgerMenu, headerFixed } from "./blocks/header.js";
 
 //📁 /assets/js/blocks  index
