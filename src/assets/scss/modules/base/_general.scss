@@ -27,6 +27,7 @@ svg {
 }
 
 .btn {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,10 +36,34 @@ svg {
     line-height: 27px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: $white;
-    background: $btn_bg;
+    background: transparent;
     border-radius: 50px;
     font-family: 'Tenor Sans';
     cursor: pointer;
+    //z-index: 1;
+    transition: $transition;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $btn_bg;
+        border-radius: 50px;
+        z-index: -1;
+        opacity: 1;
+        transition: $transition;
+    }
+
+    &:hover {
+        background: $blue-hover;
+
+        &::after {
+            //opacity: 0;
+        }
+    }
 }
 
 .sectionTitle {
