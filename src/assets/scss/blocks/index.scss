@@ -308,7 +308,38 @@
     }
 
     .slick-arrow {
+        position: relative;
         cursor: pointer;
+
+        &:hover {
+            &::after {
+                background: #ECF3FF;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -9px;
+            width: 28px;
+            height: 28px;
+            background: transparent;
+            border-radius: 50%;
+            z-index: -1;
+            transition: $transition;
+        }
+
+        &.slideArrows__next {
+            &::after {
+                left: 12px;
+            }
+        }
+
+        &.slideArrows__prev {
+            &::after {
+                right: 12px;
+            }
+        }
 
         &.slick-disabled {
             opacity: .4;
