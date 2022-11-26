@@ -424,6 +424,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["specialistSliider"])();
   Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["requestCall"])();
   Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["messageThanks"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["popupYoutube"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -16580,6 +16581,7 @@ function specialistSliider() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestCall", function() { return requestCall; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "popupYoutube", function() { return popupYoutube; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "messageThanks", function() { return messageThanks; });
 // request a call
 function requestCall() {
@@ -16593,6 +16595,21 @@ function requestCall() {
     $(document).on('click', '.popupClose_js', function (e) {
       e.preventDefault();
       $.magnificPopup.close();
+    });
+  }
+}
+; // popup youtube
+
+function popupYoutube() {
+  var popupYoutube = $(".popupYoutube_js");
+
+  if (document.querySelector('.popupYoutube_js')) {
+    $('.popupYoutube_js').magnificPopup({
+      type: 'iframe',
+      tClose: 'Закрыть (Esc)',
+      tLoading: 'Загрузка...',
+      mainClass: 'mfp-video',
+      fixedContentPos: true
     });
   }
 }

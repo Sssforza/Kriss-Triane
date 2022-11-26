@@ -14,6 +14,20 @@ export function requestCall() {
     }
 };
 
+// popup youtube
+export function popupYoutube () {
+    const popupYoutube = $(".popupYoutube_js");
+	if(document.querySelector('.popupYoutube_js')) {
+		$('.popupYoutube_js').magnificPopup({
+			type: 'iframe',
+			tClose: 'Закрыть (Esc)',
+			tLoading: 'Загрузка...',
+			mainClass: 'mfp-video',
+			fixedContentPos: true,
+		});
+    }
+};
+
 // message thanks
 export function messageThanks() {
     if (document.querySelector('.messageThanks_js')) {

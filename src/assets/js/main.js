@@ -21,7 +21,7 @@ import { getDiscount, formRequestCall } from "./blocks/validations.js";
 import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider, specialistSliider } from "./blocks/slick.js";
 
 //📁 /assets/js/popup  magnific-popup
-import { requestCall, messageThanks } from "./blocks/popup.js";
+import { requestCall, messageThanks, popupYoutube } from "./blocks/popup.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -42,5 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     requestCall();
     messageThanks();
+    popupYoutube();
 
 });

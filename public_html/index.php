@@ -521,9 +521,9 @@
     <section class="video" style="background-image:url(/dist/img/videoBg.jpg)">
         <div class="video__content">
             <div class="video__title">Посмотрите видео о&nbsp;том, как проходит сеанс</div>
-            <div class="video__play">
+            <a href="https://www.youtube.com/watch?v=7l0zNuQ9pi0" class="video__play popupYoutube_js">
                 <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/videoPlay.svg';?>
-            </div>
+            </a>
         </div>
     </section>
     <section class="reviews">
