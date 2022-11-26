@@ -90,10 +90,10 @@
             </div>
         </div>
         <div class="popup white-popup mfp-hide" id="popupRequestCall">
-            <div class="popup__close popupClose_js">
-                <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
-            </div>
             <div class="popup__content">
+                <div class="popup__close popupClose_js">
+                    <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
+                </div>
                 <div class="popup__title">Заказать звонок</div>
                 <div class="popup__description">Заполните форму, и&nbsp;мы&nbsp;перезвоним <br>вам в&nbsp;ближайшее время</div>
                 <form action="" class="discount__form form formRequestCall_js">
