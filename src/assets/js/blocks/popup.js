@@ -13,3 +13,13 @@ export function requestCall() {
         });
     }
 };
+
+// message thanks
+export function messageThanks() {
+    if (document.querySelector('.messageThanks_js')) {
+        let messageClose = document.querySelector('.messageThanksClose_js');
+        messageClose.addEventListener("click", () => {
+            document.body.classList.remove('messageThanks');
+        });
+    }
+};

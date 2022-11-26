@@ -423,6 +423,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["reviewsSliider"])();
   Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_6__["specialistSliider"])();
   Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["requestCall"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_7__["messageThanks"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -16579,6 +16580,7 @@ function specialistSliider() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestCall", function() { return requestCall; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "messageThanks", function() { return messageThanks; });
 // request a call
 function requestCall() {
   if (document.querySelector('.requestCall_js')) {
@@ -16591,6 +16593,16 @@ function requestCall() {
     $(document).on('click', '.popupClose_js', function (e) {
       e.preventDefault();
       $.magnificPopup.close();
+    });
+  }
+}
+; // message thanks
+
+function messageThanks() {
+  if (document.querySelector('.messageThanks_js')) {
+    var messageClose = document.querySelector('.messageThanksClose_js');
+    messageClose.addEventListener("click", function () {
+      document.body.classList.remove('messageThanks');
     });
   }
 }

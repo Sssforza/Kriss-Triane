@@ -114,4 +114,13 @@
                 </form>
             </div>
         </div>
-        
+        <!-- чтобы вывести сообщение к body надо добавить класс messageThanks -->
+        <div class="popup message messageThanks_js">
+            <div class="popup__content">
+                <div class="popup__close messageThanksClose_js">
+                    <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
+                </div>
+                <div class="popup__title">Спасибо за заявку!</div>
+                <div class="popup__description">Мы&nbsp;перезвоним вам в&nbsp;ближайшее время</div>
+            </div>
+        </div>

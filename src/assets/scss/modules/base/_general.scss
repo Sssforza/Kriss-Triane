@@ -27,6 +27,14 @@ body {
             }
         }
     }
+
+    &.messageThanks {
+        overflow: hidden;
+
+        .message {
+            display: flex;
+        }
+    }
 }
 
 svg {
@@ -333,5 +341,38 @@ input[type="number"]::-webkit-outer-spin-button {
                 }
             }
         }
+    }
+}
+
+.message {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    background: rgba(87, 80, 80, 0.7);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+
+    .popup__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 336px;
+        width: 540px;
+
+        &::after {
+            bottom: 36px;
+        }
+    }
+
+    .popup__description {
+        width: 80%;
     }
 }
