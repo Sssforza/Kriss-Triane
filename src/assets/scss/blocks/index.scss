@@ -121,9 +121,19 @@
     padding: 0 40px;
     padding-left: 117px;
 
+    @media (max-width:$xl) {
+        padding: 0 40px;
+    }
+
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+
+        @media (max-width:$xl) {
+            gap: 30px 40px;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -150,7 +160,11 @@
     position: relative;
 
     &__content {
-        margin-left: 117px;
+        margin-left: 143px;
+
+        @media (max-width:$xl) {
+            margin-left: 40px;
+        }
     }
 
     &__item {
@@ -160,6 +174,10 @@
         height: 100%;
         display: flex !important;
         gap: 52px;
+
+        @media (max-width:$xl) {
+            width: 950px !important;
+        }
     }
 
     &__picture {
@@ -284,7 +302,7 @@
     &__counter {
         position: absolute;
         bottom: 15px;
-        left: 758px;
+        left: 735px;
         font-size: 16px;
         line-height: 24px;
         color: $blue;
@@ -305,6 +323,10 @@
         left: 840px;
         display: flex;
         gap: 62px;
+
+        @media (max-width:$xl) {
+            left: 738px;
+        }
     }
 
     .slick-arrow {
@@ -542,9 +564,13 @@
     }
 
     &__img {
-        width: 663px;
+        width: 49.2%;
         height: 100%;
         @extend %imgBg;
+
+        @media (max-width:$xl) {
+            width: 40%;
+        }
     }
 
     &__info {
@@ -565,6 +591,12 @@
         font-size: 16px;
         line-height: 22px;
         color: $white_opacity6;
+
+        br {
+            @media (max-width:$xl) {
+                display: none;
+            }
+        }
     }
 
     &__form {
@@ -705,9 +737,13 @@
     }
 
     &__img {
-        width: 551px;
+        width: 40.9%;
         height: 100%;
         @extend %imgBg;
+
+        @media (max-width:$xl) {
+            width: 40%;
+        }
     }
 
     &__info {
@@ -728,6 +764,10 @@
         line-height: 22px;
         color: $white_opacity6;
         width: 85%;
+
+        @media (max-width:$xl) {
+            width: 95%;
+        }
     }
 
     &__btn {
@@ -756,6 +796,10 @@
         line-height: 36px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $white;
+
+        @media (max-width:$xl) {
+            font-size: 20px;
+        }
     }
 }
 

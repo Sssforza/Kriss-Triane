@@ -68,6 +68,7 @@
     }
 
     &__tel {
+        white-space: nowrap;
         @extend %link;
     }
 

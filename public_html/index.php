@@ -38,10 +38,18 @@
             <div class="sectionTitle">Программы</div>
             <div class="programsTabs">
                 <div class="programsTabs__list">
-                    <div class="programsTabs__item programsTabs_js active" data-program="personal">Персональные SPA-программы</div>
-                    <div class="programsTabs__item programsTabs_js" data-program="forTwo">SPA для двоих</div>
-                    <div class="programsTabs__item programsTabs_js" data-program="individual">Индивидуальное парение</div>
-                    <div class="programsTabs__item programsTabs_js" data-program="premium">Премиальные уходы ComfortZone</div>
+                    <div class="programsTabs__item programsTabs_js active">
+                        <span class="programsTabs_js" data-program="personal">Персональные SPA-программы</span> 
+                    </div>
+                    <div class="programsTabs__item programsTabs_js">
+                        <span class="programsTabs_js" data-program="forTwo">SPA для двоих</span> 
+                    </div>
+                    <div class="programsTabs__item programsTabs_js">
+                        <span class="programsTabs_js" data-program="individual">Индивидуальное парение</span> 
+                    </div>
+                    <div class="programsTabs__item programsTabs_js">
+                        <span class="programsTabs_js" data-program="premium">Премиальные уходы ComfortZone</span> 
+                    </div>
                 </div>
             </div>
             <div class="programs__slider">
