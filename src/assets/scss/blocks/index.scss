@@ -1,13 +1,5 @@
 @import "../modules/utilities/_variables.scss";
 
-section {
-
-    // md!!!!
-    @media (max-width:$md) {
-        overflow: hidden;
-    }
-}
-
 .banner {
     width: 100vw;
     height: 100vh;

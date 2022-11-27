@@ -235,6 +235,10 @@ input[type="number"]::-webkit-outer-spin-button {
     top: -30px;
     right: -60px;
     opacity: 1;
+    @media (max-width:$md) {
+        top: -50px;
+        right: 0;
+    }
 
     background: {
         image: url($imgUrl + "svg/popupClose.svg");
@@ -258,6 +262,10 @@ input[type="number"]::-webkit-outer-spin-button {
         top: -30px;
         right: -60px;
         cursor: pointer;
+        @media (max-width:$md) {
+            top: -50px;
+            right: 0;
+        }
 
         &:hover {
             svg {
