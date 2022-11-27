@@ -83,7 +83,7 @@
                             <a href="tel:+7(3812)220011" class="headerMenu__tel">+7 (3812) 22-00-11</a>
                         </div>
                         <div class="headerMenu__bottom">
-                            <a href="#" class="headerMenu__link">Заказать звонок</a>
+                            <a href="#popupRequestCall" class="headerMenu__link requestCall_js">Заказать звонок</a>
                         </div>
                     </div>
                     <div class="headerMenu__box">

@@ -682,7 +682,7 @@
                         в&nbsp;электронном или физическом виде с&nbsp;курьерской доставкой лично адресату в&nbsp;течение дня.
                     </div>
                 </div>
-                <div class="btn certificate__btn">Заказать</div>
+                <a href="#popupRequestCall" class="btn certificate__btn requestCall_js">Заказать</a>
                 <div class="certificate__box">
                     <div class="certificate__item">
                         <div class="certificate__name">Номинал</div>
