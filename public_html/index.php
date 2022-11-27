@@ -60,7 +60,7 @@
                     ! для каждого слайдера нужна своя инициализация
                  -->
                 <div class="programsSliider programsSliider_personal_js programsSliider_js" data-content="personal">
-                   <div class="programsSliider__content programsSliider__personal_js">
+                   <div class="programsSliider__content customScroll programsSliider__personal_js" id="my-scrollbar">
                         <div class="programsSliider__item">
                             <div class="programsSliider__picture">
                                 <div class="programsSliider__percentage">-15%</div>
@@ -186,7 +186,7 @@
                     <div class="slideArrows"></div>
                 </div>
                 <div class="programsSliider programsSliider_forTwo_js programsSliider_js hide" data-content="forTwo">
-                   <div class="programsSliider__content programsSliider__forTwo_js">
+                   <div class="programsSliider__content customScroll programsSliider__forTwo_js">
                         <div class="programsSliider__item">
                             <div class="programsSliider__picture">
                                 <div class="programsSliider__percentage">-25%</div>
@@ -272,7 +272,7 @@
                     <div class="slideArrows"></div>
                 </div>
                 <div class="programsSliider programsSliider_individual_js programsSliider_js hide" data-content="individual">
-                   <div class="programsSliider__content programsSliider__individual_js">
+                   <div class="programsSliider__content customScroll programsSliider__individual_js">
                         <div class="programsSliider__item">
                             <div class="programsSliider__picture">
                                 <div class="programsSliider__percentage">-10%</div>
@@ -398,7 +398,7 @@
                     <div class="slideArrows"></div>
                 </div>
                 <div class="programsSliider programsSliider_premium_js programsSliider_js hide" data-content="premium">
-                   <div class="programsSliider__content programsSliider__premium_js">
+                   <div class="programsSliider__content customScroll programsSliider__premium_js">
                         <div class="programsSliider__item">
                             <div class="programsSliider__picture">
                                 <div class="programsSliider__percentage">-5%</div>
@@ -537,7 +537,7 @@
     <section class="reviews">
         <div class="reviews__content">
             <div class="sectionTitle">Отзывы</div>
-            <div class="reviews__slider reviewsSliider_js">
+            <div class="reviews__slider customScroll reviewsSliider_js">
                 <div class="reviews__item">
                     <div class="reviews__bg" style="background-image:url(/dist/img/trash/reviews13.png)"></div>
                 </div>
@@ -601,7 +601,7 @@
                 На&nbsp;протяжении долгого времени отбирали самых талантливых и&nbsp;влюблённых в&nbsp;своё дело 
                 специалистов в&nbsp;SPA индустрии
             </div>
-            <div class="specialist__slider specialistSliider_js">
+            <div class="specialist__slider customScroll specialistSliider_js">
                 <div class="specialist__item">
                     <div class="specialist__bg" style="background-image:url(/dist/img/trash/specialist1.jpg)"></div>
                     <div class="specialist__box">
@@ -674,11 +674,13 @@
     <section class="certificate">
         <div class="certificate__content">
             <div class="certificate__info">
-                <div class="certificate__title">Подарочный сертификат</div>
-                <div class="certificate__description">
-                    Универсальный сертификат в&nbsp;Beauty gallery Kriss Triane&nbsp;&mdash; это лучший подарок для всех, 
-                    кто заботится о&nbsp;красоте и&nbsp;здоровье своего тела. Оформить сертификат онлайн можно 
-                    в&nbsp;электронном или физическом виде с&nbsp;курьерской доставкой лично адресату в&nbsp;течение дня.
+                <div class="certificate__wrap">
+                    <div class="certificate__title">Подарочный сертификат</div>
+                    <div class="certificate__description">
+                        Универсальный сертификат в&nbsp;Beauty gallery Kriss Triane&nbsp;&mdash; это лучший подарок для всех, 
+                        кто заботится о&nbsp;красоте и&nbsp;здоровье своего тела. Оформить сертификат онлайн можно 
+                        в&nbsp;электронном или физическом виде с&nbsp;курьерской доставкой лично адресату в&nbsp;течение дня.
+                    </div>
                 </div>
                 <div class="btn certificate__btn">Заказать</div>
                 <div class="certificate__box">

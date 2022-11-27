@@ -82,6 +82,11 @@ svg {
     color: $txt;
     font-family: 'Tenor Sans';
     text-align: center;
+
+    @media (max-width:$md) {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -109,9 +114,15 @@ input[type="number"]::-webkit-outer-spin-button {
     position: relative;
     width: 420px;
     height: 50px;
+    @media (max-width:$md) {
+        width: 100%;
+    }
 
     &:not(:first-child) {
         margin-top: 34px;
+        @media (max-width:$md) {
+            margin-top: 30px;
+        }
     }
 
     &::before {
@@ -182,6 +193,23 @@ input[type="number"]::-webkit-outer-spin-button {
             height: auto;
             opacity: 1;
             pointer-events: auto;
+        }
+    }
+}
+
+.customScroll {
+    @media (max-width:$md) {
+        display: flex;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            height: 6px;
+            background-color: $blueLight;
+            border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $blue;
+            border-radius: 20px;
         }
     }
 }

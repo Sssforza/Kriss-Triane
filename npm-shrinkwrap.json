@@ -1624,6 +1624,11 @@
                 "@jridgewell/sourcemap-codec": "^1.4.10"
             }
         },
+        "@juggle/resize-observer": {
+            "version": "3.4.0",
+            "resolved": "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz",
+            "integrity": "sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA=="
+        },
         "@nodelib/fs.scandir": {
             "version": "2.1.5",
             "resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",
@@ -3656,6 +3661,11 @@
                 }
             }
         },
+        "can-use-dom": {
+            "version": "0.1.0",
+            "resolved": "https://registry.npmjs.org/can-use-dom/-/can-use-dom-0.1.0.tgz",
+            "integrity": "sha512-ceOhN1DL7Y4O6M0j9ICgmTYziV89WMd96SvSl0REd8PMgrY0B/WBOPoed5S1KUmJqXgUXh8gzSe6E3ae27upsQ=="
+        },
         "caniuse-lite": {
             "version": "1.0.30001309",
             "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001309.tgz",
@@ -4209,8 +4219,7 @@
         "core-js": {
             "version": "3.21.0",
             "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.21.0.tgz",
-            "integrity": "sha512-YUdI3fFu4TF/2WykQ2xzSiTQdldLB4KVuL9WeAy5XONZYt5Cun/fpQvctoKbCgvPhmzADeesTk/j2Rdx77AcKQ==",
-            "dev": true
+            "integrity": "sha512-YUdI3fFu4TF/2WykQ2xzSiTQdldLB4KVuL9WeAy5XONZYt5Cun/fpQvctoKbCgvPhmzADeesTk/j2Rdx77AcKQ=="
         },
         "core-js-compat": {
             "version": "3.21.0",
@@ -11738,7 +11747,8 @@
         "jquery": {
             "version": "3.6.0",
             "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz",
-            "integrity": "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw=="
+            "integrity": "sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==",
+            "dev": true
         },
         "js-base64": {
             "version": "2.6.4",
@@ -12183,6 +12193,11 @@
             "integrity": "sha1-+6HEUkwZ7ppfgTa0YJ8BfPTe1pI=",
             "dev": true
         },
+        "lodash.clamp": {
+            "version": "4.0.3",
+            "resolved": "https://registry.npmjs.org/lodash.clamp/-/lodash.clamp-4.0.3.tgz",
+            "integrity": "sha512-HvzRFWjtcguTW7yd8NJBshuNaCa8aqNFtnswdT7f/cMd/1YKy5Zzoq4W/Oxvnx9l7aeY258uSdDfM793+eLsVg=="
+        },
         "lodash.clone": {
             "version": "4.5.0",
             "resolved": "https://registry.npmjs.org/lodash.clone/-/lodash.clone-4.5.0.tgz",
@@ -12192,8 +12207,7 @@
         "lodash.debounce": {
             "version": "4.0.8",
             "resolved": "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz",
-            "integrity": "sha1-gteb/zCmfEAF/9XiUVMArZyk168=",
-            "dev": true
+            "integrity": "sha1-gteb/zCmfEAF/9XiUVMArZyk168="
         },
         "lodash.defaultsdeep": {
             "version": "4.6.1",
@@ -12245,6 +12259,11 @@
                 "lodash.isarray": "^3.0.0"
             }
         },
+        "lodash.memoize": {
+            "version": "4.1.2",
+            "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz",
+            "integrity": "sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag=="
+        },
         "lodash.restparam": {
             "version": "3.6.1",
             "resolved": "https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz",
@@ -12283,6 +12302,11 @@
                 "lodash._reinterpolate": "^3.0.0",
                 "lodash.escape": "^3.0.0"
             }
+        },
+        "lodash.throttle": {
+            "version": "4.1.1",
+            "resolved": "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz",
+            "integrity": "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
         },
         "lodash.trim": {
             "version": "4.5.1",
@@ -15732,6 +15756,19 @@
                 "is-arrayish": "^0.3.1"
             }
         },
+        "simplebar": {
+            "version": "5.3.9",
+            "resolved": "https://registry.npmjs.org/simplebar/-/simplebar-5.3.9.tgz",
+            "integrity": "sha512-1vIIpjDvY9sVH14e0LGeiCiTFU3ILqAghzO6OI9axeG+mvU/vMSrvXeAXkBolqFFz3XYaY8n5ahH9MeP3sp2Ag==",
+            "requires": {
+                "@juggle/resize-observer": "^3.3.1",
+                "can-use-dom": "^0.1.0",
+                "core-js": "^3.0.1",
+                "lodash.debounce": "^4.0.8",
+                "lodash.memoize": "^4.1.2",
+                "lodash.throttle": "^4.1.1"
+            }
+        },
         "slash": {
             "version": "3.0.0",
             "resolved": "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz",
@@ -15743,6 +15780,17 @@
             "resolved": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
             "integrity": "sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==",
             "dev": true
+        },
+        "smooth-scrollbar": {
+            "version": "8.8.1",
+            "resolved": "https://registry.npmjs.org/smooth-scrollbar/-/smooth-scrollbar-8.8.1.tgz",
+            "integrity": "sha512-FQDRtdLTRye8LdRHohNAxh0hyo7gl8+APfA+8Qu5S38MBqR8/WqOoRVzjizH6FTdbU1qGsB7gs8LhMeFJ4Jr8g==",
+            "requires": {
+                "core-js": "^3.6.4",
+                "lodash.clamp": "^4.0.3",
+                "lodash.debounce": "^4.0.8",
+                "tslib": "^1.10.0"
+            }
         },
         "snapdragon": {
             "version": "0.8.2",
@@ -17111,6 +17159,11 @@
             "requires": {
                 "glob": "^7.1.2"
             }
+        },
+        "tslib": {
+            "version": "1.14.1",
+            "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+            "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
         },
         "ttf2woff": {
             "version": "2.0.2",

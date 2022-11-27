@@ -1,7 +1,9 @@
+let md = 1024
+
 // programsSliiders
 export function programsSliider_personal() {
     const slickProgramsPersonal = $(".programsSliider__personal_js");
-    if (slickProgramsPersonal.length) {
+    if (slickProgramsPersonal.length & window.screen.availWidth > md) {
         var currentSlide;
         var slidesCount;
         var sliderCounter = document.createElement('div');
@@ -41,7 +43,7 @@ export function programsSliider_personal() {
 
 export function programsSliider_forTwo() {
     const slickPrograms = $(".programsSliider__forTwo_js");
-    if (slickPrograms.length) {
+    if (slickPrograms.length & window.screen.availWidth > md) {
         let currentSlide;
         let slidesCount;
         let sliderCounter = document.createElement('div');
@@ -81,7 +83,7 @@ export function programsSliider_forTwo() {
 
 export function programsSliider_individual() {
     const slickPrograms = $(".programsSliider__individual_js");
-    if (slickPrograms.length) {
+    if (slickPrograms.length & window.screen.availWidth > md) {
         var currentSlide;
         var slidesCount;
         var sliderCounter = document.createElement('div');
@@ -121,7 +123,7 @@ export function programsSliider_individual() {
 
 export function programsSliider_premium() {
     const slickPrograms = $(".programsSliider__premium_js");
-    if (slickPrograms.length) {
+    if (slickPrograms.length & window.screen.availWidth > md) {
         var currentSlide;
         var slidesCount;
         var sliderCounter = document.createElement('div');
@@ -161,27 +163,30 @@ export function programsSliider_premium() {
 
 export function reviewsSliider() {
     const slickReviews = $(".reviewsSliider_js");
-
-    slickReviews.slick({
-        centerMode: true,
-        className: "center",
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 5,
-        swipeToSlide: true,
-        arrows: false,
-        // initialSlide: 3,
-        // variableWidth: true
-    });
+    if (slickReviews.length & window.screen.availWidth > md) {
+        slickReviews.slick({
+            centerMode: true,
+            className: "center",
+            infinite: true,
+            centerPadding: "60px",
+            slidesToShow: 5,
+            swipeToSlide: true,
+            arrows: false,
+            // initialSlide: 3,
+            // variableWidth: true
+        });
+    }
 };
 
 export function specialistSliider() {
     const slickSpecialist = $(".specialistSliider_js");
-    slickSpecialist.slick({
-        centerMode: true,
-        slidesToShow: 3,
-        variableWidth: true,
-        arrows: false,
-        infinite: true
-    });
+    if (slickSpecialist.length & window.screen.availWidth > md) {
+        slickSpecialist.slick({
+            centerMode: true,
+            slidesToShow: 3,
+            variableWidth: true,
+            arrows: false,
+            infinite: true
+        });
+    }
 };

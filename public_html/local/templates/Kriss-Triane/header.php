@@ -17,6 +17,11 @@
                 <div class="header__block">
                     <div class="header__address">Омск, ул. Волочаевская, 15/2</div>
                     <div class="header__working">Ежедневно с 9:00 до 21:00</div>
+                    <div class="header__mob">
+                        <a class="header__mob_link" href="tel:+7(3812)220011">
+                            <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/headerMob.svg';?>
+                        </a>
+                    </div>
                 </div>
                 <div class="header__block">
                     <div class="header__logo">

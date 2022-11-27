@@ -62,7 +62,9 @@
     "dependencies": {
         "blowup": "^1.0.2",
         "remote": "^0.2.6",
-        "sharp": "^0.28.3"
+        "sharp": "^0.28.3",
+        "simplebar": "^5.3.9",
+        "smooth-scrollbar": "^8.8.1"
     },
     "version": "0.0.0"
 }

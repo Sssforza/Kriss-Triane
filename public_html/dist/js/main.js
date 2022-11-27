@@ -400,13 +400,13 @@ global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁
 
  //📁 /node_modules/  magnific-popup 1.1.0
 
- //📁 /assets/js/blocks  header
+ //📁 /assets/js/blocks  responsive
 
  //📁 /assets/js/blocks  header
 
  //📁 /assets/js/blocks  index
 
- //📁 /assets/js/blocks  index
+ //📁 /assets/js/blocks  validations
 
  //📁 /assets/js/blocks  slick
 
@@ -16417,11 +16417,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "programsSliider_premium", function() { return programsSliider_premium; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reviewsSliider", function() { return reviewsSliider; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "specialistSliider", function() { return specialistSliider; });
-// programsSliiders
+var md = 1024; // programsSliiders
+
 function programsSliider_personal() {
   var slickProgramsPersonal = $(".programsSliider__personal_js");
 
-  if (slickProgramsPersonal.length) {
+  if (slickProgramsPersonal.length & window.screen.availWidth > md) {
     var currentSlide;
     var slidesCount;
     var sliderCounter = document.createElement('div');
@@ -16459,7 +16460,7 @@ function programsSliider_personal() {
 function programsSliider_forTwo() {
   var slickPrograms = $(".programsSliider__forTwo_js");
 
-  if (slickPrograms.length) {
+  if (slickPrograms.length & window.screen.availWidth > md) {
     var currentSlide;
     var slidesCount;
     var sliderCounter = document.createElement('div');
@@ -16497,7 +16498,7 @@ function programsSliider_forTwo() {
 function programsSliider_individual() {
   var slickPrograms = $(".programsSliider__individual_js");
 
-  if (slickPrograms.length) {
+  if (slickPrograms.length & window.screen.availWidth > md) {
     var currentSlide;
     var slidesCount;
     var sliderCounter = document.createElement('div');
@@ -16535,7 +16536,7 @@ function programsSliider_individual() {
 function programsSliider_premium() {
   var slickPrograms = $(".programsSliider__premium_js");
 
-  if (slickPrograms.length) {
+  if (slickPrograms.length & window.screen.availWidth > md) {
     var currentSlide;
     var slidesCount;
     var sliderCounter = document.createElement('div');
@@ -16572,28 +16573,34 @@ function programsSliider_premium() {
 ;
 function reviewsSliider() {
   var slickReviews = $(".reviewsSliider_js");
-  slickReviews.slick({
-    centerMode: true,
-    className: "center",
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 5,
-    swipeToSlide: true,
-    arrows: false // initialSlide: 3,
-    // variableWidth: true
 
-  });
+  if (slickReviews.length & window.screen.availWidth > md) {
+    slickReviews.slick({
+      centerMode: true,
+      className: "center",
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 5,
+      swipeToSlide: true,
+      arrows: false // initialSlide: 3,
+      // variableWidth: true
+
+    });
+  }
 }
 ;
 function specialistSliider() {
   var slickSpecialist = $(".specialistSliider_js");
-  slickSpecialist.slick({
-    centerMode: true,
-    slidesToShow: 3,
-    variableWidth: true,
-    arrows: false,
-    infinite: true
-  });
+
+  if (slickSpecialist.length & window.screen.availWidth > md) {
+    slickSpecialist.slick({
+      centerMode: true,
+      slidesToShow: 3,
+      variableWidth: true,
+      arrows: false,
+      infinite: true
+    });
+  }
 }
 ;
 

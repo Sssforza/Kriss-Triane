@@ -8,8 +8,8 @@ import 'slick-carousel';
 //📁 /node_modules/  magnific-popup 1.1.0
 import 'magnific-popup';
 
-//📁 /assets/js/blocks  header
-import {} from "./blocks/responsive";
+//📁 /assets/js/blocks  responsive
+import { } from "./blocks/responsive";
 
 //📁 /assets/js/blocks  header
 import { hamburgerMenu, headerFixed } from "./blocks/header.js";
@@ -17,7 +17,7 @@ import { hamburgerMenu, headerFixed } from "./blocks/header.js";
 //📁 /assets/js/blocks  index
 import { programsContentChange } from "./blocks/index.js";
 
-//📁 /assets/js/blocks  index
+//📁 /assets/js/blocks  validations
 import { getDiscount, formRequestCall } from "./blocks/validations.js";
 
 //📁 /assets/js/blocks  slick
@@ -27,7 +27,7 @@ import { programsSliider_personal, programsSliider_forTwo, programsSliider_indiv
 import { requestCall, messageThanks, popupYoutube } from "./blocks/popup.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     hamburgerMenu();
     headerFixed();
 

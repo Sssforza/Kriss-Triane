@@ -25,6 +25,10 @@ $transition: all .3s;
 
 %container {
 	padding: 0 30px;
+
+	@media (max-width:$md) {
+		padding: 0 20px;
+	}
 }
 
 %link {

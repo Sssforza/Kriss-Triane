@@ -7,6 +7,10 @@
     @extend %container;
     transition: $transition;
 
+    @media (max-width:$md) {
+        padding: 0;
+    }
+
     &__content {
         display: flex;
         align-items: center;
@@ -18,8 +22,21 @@
         width: 50%;
         height: 116px;
 
+        @media (max-width:$md) {
+            padding: 20px;
+            height: 88px;
+        }
+
         &:not(:last-child) {
             border-right: 1px solid $border;
+        }
+
+        &:nth-child(2) {
+            @media (max-width:$md) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         &_right {
@@ -32,6 +49,28 @@
 
     &__wrapper {
         text-align: right;
+
+        @media (max-width:$md) {
+            display: none;
+        }
+    }
+
+    &__mob {
+        display: none;
+
+        @media (max-width:$md) {
+            display: block;
+        }
+
+        &_link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: $blue;
+            border-radius: 50%;
+        }
     }
 
     &__address,
@@ -51,6 +90,13 @@
         color: $white_opacity6;
     }
 
+    &__address,
+    &__working {
+        @media (max-width:$md) {
+            display: none;
+        }
+    }
+
     &__link {
         white-space: nowrap;
         @extend %link;
@@ -68,6 +114,11 @@
     &__logo {
         svg {
             margin: 0 auto;
+
+            @media (max-width:$md) {
+                width: 168px;
+                height: 40px;
+            }
         }
     }
 
@@ -256,6 +307,10 @@
         line-height: 25px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $txt;
+        @media (max-width:$md) {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 
     &__bottom {
@@ -264,6 +319,10 @@
         line-height: 20px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $txt50;
+        @media (max-width:$md) {
+            font-size: 18px;
+            line-height: 25px;
+        }
     }
 
     &__tel {

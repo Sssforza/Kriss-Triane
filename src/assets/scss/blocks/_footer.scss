@@ -1,32 +1,68 @@
 .footer {
     margin-top: 160px;
 
+    @media (max-width:$md) {
+        margin-top: 60px;
+    }
+
     &__box {
         padding: 0 33px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width:$md) {
+            padding: 0 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
         &_bottom {
             margin-top: 100px;
             padding-top: 46px;
             padding-bottom: 41px;
             background: $f2;
+
+            @media (max-width:$md) {
+                margin-top: 60px;
+                padding-top: 40px;
+                padding-bottom: 30px;
+                align-items: center;
+            }
         }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
+
+        @media (max-width:$md) {
+            margin-top: 40px;
+            padding-right: 59px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
     }
 
     &__wrap {
         &:nth-child(2) {
             margin-left: 72px;
+
+            @media (max-width:$md) {
+                margin-left: 0;
+                order: 3;
+            }
         }
 
         &:last-child {
             margin-left: 108px;
+
+            @media (max-width:$md) {
+                margin-left: 0;
+                order: 2;
+            }
         }
     }
 
@@ -82,10 +118,19 @@
         border-radius: 16px;
         overflow: hidden;
         @extend %imgBg;
+
+        @media (max-width:$md) {
+            height: 340px;
+        }
     }
 
     &__logo {
         svg {
+            @media (max-width:$md) {
+                width: 222px;
+                height: 49px;
+            }
+
             .color {
                 fill: $blue;
             }
@@ -99,10 +144,20 @@
         color: $txt;
         opacity: 0.3;
         font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @media (max-width:$md) {
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 
     &__politics {
         text-align: right;
+
+        @media (max-width:$md) {
+            margin-top: 31px;
+            text-align: center;
+        }
     }
 
     &__policy {
