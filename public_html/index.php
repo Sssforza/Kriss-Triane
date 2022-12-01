@@ -98,6 +98,20 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <!-- блок programsSliider__mob дублируется, чтобы корректно позиционировать на мобиле -->
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -138,6 +152,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -172,6 +199,19 @@
                                             <ul class="programsSliider__text">
                                                 Обновление и&nbsp;абсолютное расслабление тела. Чуть больше, чем вы&nbsp;знали о&nbsp;райском наслаждении.
                                             </ul>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
                                         </div>
                                         <div class="programsSliider__info">
                                             <div class="programsSliider__subtitle">Длительность</div>
@@ -224,6 +264,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -258,6 +311,19 @@
                                             <ul class="programsSliider__text">
                                                 Обновление и&nbsp;абсолютное расслабление тела. Чуть больше, чем вы&nbsp;знали о&nbsp;райском наслаждении.
                                             </ul>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
                                         </div>
                                         <div class="programsSliider__info">
                                             <div class="programsSliider__subtitle">Длительность</div>
@@ -310,6 +376,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -350,6 +429,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -384,6 +476,19 @@
                                             <ul class="programsSliider__text">
                                                 Обновление и&nbsp;абсолютное расслабление тела. Чуть больше, чем вы&nbsp;знали о&nbsp;райском наслаждении.
                                             </ul>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
                                         </div>
                                         <div class="programsSliider__info">
                                             <div class="programsSliider__subtitle">Длительность</div>
@@ -436,6 +541,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -476,6 +594,19 @@
                                             <div class="programsSliider__time">1,5 часа</div>
                                         </div>
                                     </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="btn programsSliider__btn">Записаться</div>
                             </div>
@@ -510,6 +641,19 @@
                                             <ul class="programsSliider__text">
                                                 Обновление и&nbsp;абсолютное расслабление тела. Чуть больше, чем вы&nbsp;знали о&nbsp;райском наслаждении.
                                             </ul>
+                                        </div>
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Длительность</div>
+                                            <div class="programsSliider__time">1,5 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="programsSliider__mob">
+                                        <div class="programsSliider__info">
+                                            <div class="programsSliider__subtitle">Стоимость</div>
+                                            <div class="programsSliider__cost">
+                                                <div class="programsSliider__total">4 675 Р</div>
+                                                <div class="programsSliider__discount">5 500</div>
+                                            </div>
                                         </div>
                                         <div class="programsSliider__info">
                                             <div class="programsSliider__subtitle">Длительность</div>

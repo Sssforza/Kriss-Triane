@@ -18,6 +18,10 @@
             justify-content: flex-start;
         }
 
+        @media (max-width:$xs) {
+            padding: 0 10px;
+        }
+
         &_bottom {
             margin-top: 100px;
             padding-top: 46px;
@@ -29,6 +33,11 @@
                 padding-top: 40px;
                 padding-bottom: 30px;
                 align-items: center;
+            }
+
+            @media (max-width:$xs) {
+                padding-top: 40px;
+                padding-bottom: 30px;
             }
         }
     }
@@ -44,15 +53,29 @@
             justify-content: space-between;
             gap: 30px;
         }
+
+        @media (max-width:$xs) {
+            margin-top: 30px;
+            padding-right: 10px;
+            gap: 20px;
+        }
     }
 
     &__wrap {
+        @media (max-width:$xs) {
+            width: 100%;
+        }
+
         &:nth-child(2) {
             margin-left: 72px;
 
             @media (max-width:$md) {
                 margin-left: 0;
                 order: 3;
+            }
+
+            @media (max-width:$xs) {
+                order: 2;
             }
         }
 
@@ -63,6 +86,10 @@
                 margin-left: 0;
                 order: 2;
             }
+
+            @media (max-width:$xs) {
+                order: 3;
+            }
         }
     }
 
@@ -71,6 +98,16 @@
         line-height: 53px;
         color: $txt;
         font-family: 'Tenor Sans';
+
+        @media (max-width:$md) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        @media (max-width:$xs) {
+            font-size: 28px;
+            line-height: 31px;
+        }
     }
 
     &__address,
@@ -79,6 +116,11 @@
         line-height: 27px;
         color: $txt;
         font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @media (max-width:$xs) {
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 
     &__link {
@@ -88,6 +130,11 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         border-bottom: 1px solid $txt50;
         transition: $transition;
+
+        @media (max-width:$xs) {
+            font-size: 14px;
+            line-height: 21px;
+        }
 
         &:hover {
             color: $txt;
@@ -110,6 +157,10 @@
 
     &__img {
         margin-top: 40px;
+
+        @media (max-width:$xs) {
+            margin-top: 30px;
+        }
     }
 
     &__bg {
@@ -122,6 +173,10 @@
         @media (max-width:$md) {
             height: 340px;
         }
+
+        @media (max-width:$xs) {
+            height: 240px;
+        }
     }
 
     &__logo {
@@ -129,6 +184,11 @@
             @media (max-width:$md) {
                 width: 222px;
                 height: 49px;
+            }
+
+            @media (max-width:$xs) {
+                width: 184px;
+                height: 41px;
             }
 
             .color {
@@ -148,6 +208,12 @@
         @media (max-width:$md) {
             font-size: 14px;
             line-height: 21px;
+            text-align: center;
+        }
+
+        @media (max-width:$xs) {
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 
@@ -157,6 +223,10 @@
         @media (max-width:$md) {
             margin-top: 31px;
             text-align: center;
+        }
+
+        @media (max-width:$xs) {
+            margin-top: 30px;
         }
     }
 

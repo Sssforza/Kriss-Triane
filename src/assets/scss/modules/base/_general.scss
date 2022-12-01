@@ -57,6 +57,11 @@ svg {
     cursor: pointer;
     transition: $transition;
 
+    @media (max-width:$xs) {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -76,6 +81,10 @@ svg {
     }
 }
 
+section {
+    overflow-x: hidden;
+}
+
 .sectionTitle {
     font-size: 48px;
     line-height: 53px;
@@ -86,6 +95,11 @@ svg {
     @media (max-width:$md) {
         font-size: 36px;
         line-height: 40px;
+    }
+
+    @media (max-width:$xs) {
+        font-size: 28px;
+        line-height: 31px;
     }
 }
 
@@ -114,14 +128,20 @@ input[type="number"]::-webkit-outer-spin-button {
     position: relative;
     width: 420px;
     height: 50px;
+
     @media (max-width:$md) {
         width: 100%;
     }
 
     &:not(:first-child) {
         margin-top: 34px;
+
         @media (max-width:$md) {
             margin-top: 30px;
+        }
+
+        @media (max-width:$xs) {
+            margin-top: 20px;
         }
     }
 
@@ -198,18 +218,58 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .customScroll {
+
+    &::before,
+    &::after {
+        @media (max-width:$md) {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 20px;
+            height: 8px;
+            background: #FFFFFF;
+            z-index: 1;
+        }
+
+        @media (max-width:$xs) {
+            width: 10px;
+        }
+    }
+
+    &::before {
+        @media (max-width:$md) {
+            left: 0;
+        }
+    }
+
+    &::after {
+        @media (max-width:$md) {
+            right: 0;
+            transform: scale(-1, 1);
+        }
+    }
+
     @media (max-width:$md) {
         display: flex;
         overflow-x: scroll;
-        &::-webkit-scrollbar {
+    }
+
+    &::-webkit-scrollbar {
+        @media (max-width:$md) {
             height: 6px;
             background-color: $blueLight;
-            border-radius: 20px;
+            //border-radius: 20px;
         }
 
-        &::-webkit-scrollbar-thumb {
+        @media (max-width:$xs) {
+            height: 4px;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @media (max-width:$md) {
             background-color: $blue;
-            border-radius: 20px;
+            //border-radius: 20px;
         }
     }
 }
@@ -235,6 +295,7 @@ input[type="number"]::-webkit-outer-spin-button {
     top: -30px;
     right: -60px;
     opacity: 1;
+
     @media (max-width:$md) {
         top: -50px;
         right: 0;
@@ -262,9 +323,14 @@ input[type="number"]::-webkit-outer-spin-button {
         top: -30px;
         right: -60px;
         cursor: pointer;
+
         @media (max-width:$md) {
             top: -50px;
             right: 0;
+        }
+
+        @media (max-width:$xs) {
+            top: -30px;
         }
 
         &:hover {
@@ -276,6 +342,11 @@ input[type="number"]::-webkit-outer-spin-button {
         }
 
         svg {
+            @media (max-width:$xs) {
+                width: 20px;
+                height: 20px;
+            }
+
             path {
                 transition: $transition;
             }
@@ -288,6 +359,10 @@ input[type="number"]::-webkit-outer-spin-button {
         background: $white;
         border-radius: 20px;
         z-index: 1;
+
+        @media (max-width:$xs) {
+            padding: 30px 10px 30px;
+        }
 
         &::after,
         &::before {
@@ -327,6 +402,11 @@ input[type="number"]::-webkit-outer-spin-button {
         text-align: center;
         color: $txt;
         font-family: 'Tenor Sans';
+
+        @media (max-width:$xs) {
+            font-size: 28px;
+            line-height: 31px;
+        }
     }
 
     &__description {
@@ -336,6 +416,12 @@ input[type="number"]::-webkit-outer-spin-button {
         color: $txt50;
         text-align: center;
         font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @media (max-width:$xs) {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 
     &__button {
@@ -343,6 +429,11 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 200px;
         height: 50px;
         background: $blue;
+
+        @media (max-width:$xs) {
+            margin-top: 30px;
+            height: 48px;
+        }
     }
 
     .envelopeInput {
@@ -388,10 +479,20 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 
     .discount {
+        &__form {
+            @media (max-width:$xs) {
+                margin-top: 20px;
+            }
+        }
+
         &__privacy {
             margin-top: 30px;
             text-align: center;
             color: $txt40;
+
+            @media (max-width:$xs) {
+                margin-top: 20px;
+            }
 
             a {
                 &:hover {
@@ -424,6 +525,11 @@ input[type="number"]::-webkit-outer-spin-button {
         flex-direction: column;
         height: 336px;
         width: 540px;
+
+        @media (max-width:$xs) {
+            padding: 30px 20px;
+            width: 300px;
+        }
 
         &::after {
             bottom: 36px;

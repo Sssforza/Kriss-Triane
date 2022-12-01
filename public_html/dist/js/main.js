@@ -16229,7 +16229,6 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 var md = 1024;
 var xs = 540;
-console.log('resp');
 var viewport = $('meta[name="viewport"]');
 
 if (window.screen.availWidth <= md || device.tablet()) {

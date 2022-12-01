@@ -8,7 +8,7 @@
     transition: $transition;
 
     @media (max-width:$md) {
-        padding: 0;
+        padding: 0 !important;
     }
 
     &__content {
@@ -25,6 +25,14 @@
         @media (max-width:$md) {
             padding: 20px;
             height: 88px;
+        }
+
+        @media (max-width:$xs) {
+            padding: 14px 20px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         &:not(:last-child) {
@@ -70,6 +78,11 @@
             height: 48px;
             background: $blue;
             border-radius: 50%;
+
+            @media (max-width:$xs) {
+                width: 32px;
+                height: 32px;
+            }
         }
     }
 
@@ -119,6 +132,11 @@
                 width: 168px;
                 height: 40px;
             }
+
+            @media (max-width:$xs) {
+                width: 119.29px;
+                height: 26.43px;
+            }
         }
     }
 
@@ -163,6 +181,13 @@
         border-radius: 50%;
         background: transparent;
         transition: $transition;
+
+        @media (max-width:$xs) {
+            top: -14px;
+            right: -13px;
+            width: 50px;
+            height: 50px
+        }
     }
 
     &__box {
@@ -170,6 +195,11 @@
         display: inline-block;
         width: 40px;
         height: 32px;
+
+        @media (max-width:$xs) {
+            width: 24px;
+            height: 22px;
+        }
     }
 
     &__inner,
@@ -184,6 +214,10 @@
         background-color: $white;
         transition: $transition;
         z-index: 5;
+
+        @media (max-width:$xs) {
+            width: 24px;
+        }
     }
 
     &__inner {
@@ -196,21 +230,23 @@
             display: block;
             content: "";
         }
-    }
-
-    &__inner {
 
         &:before {
             top: -14px;
             transition: top 75ms ease-in 75ms, transform 75ms cubic-bezier(.55, .055, .675, .19) 0s;
-        }
-    }
 
-    &__inner {
+            @media (max-width:$xs) {
+                top: -12px;
+            }
+        }
 
         &:after {
             bottom: -14px;
             transition: bottom 75ms ease-in 75ms, transform 75ms cubic-bezier(.55, .055, .675, .19) 0s;
+
+            @media (max-width:$xs) {
+                bottom: -11px;
+            }
         }
     }
 
@@ -264,6 +300,13 @@
         background: $white;
         transform: translate(100%, 0);
         transition: $transition;
+
+        @media (max-width:$xs) {
+            padding: 30px 10px 30px 20px;
+            width: 240px;
+            gap: 40px;
+            overflow-y: scroll;
+        }
     }
 
     &__top {
@@ -273,6 +316,10 @@
 
     &__logo {
         svg {
+            @media (max-width:$xs) {
+                zoom: .6;
+            }
+
             .color {
                 fill: $blue;
             }
@@ -282,6 +329,10 @@
     &__li {
         &:not(:first-child) {
             margin-top: 20px;
+
+            @media (max-width:$xs) {
+                margin-top: 10px;
+            }
         }
     }
 
@@ -292,6 +343,11 @@
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $blue;
         transition: $transition;
+
+        @media (max-width:$xs) {
+            font-size: 20px;
+            line-height: 26px;
+        }
 
         &:hover {
             color: rgba(87, 80, 80, 0.7);
@@ -307,9 +363,15 @@
         line-height: 25px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $txt;
+
         @media (max-width:$md) {
             font-size: 20px;
             line-height: 30px;
+        }
+
+        @media (max-width:$xs) {
+            font-size: 14px;
+            line-height: 140%;
         }
     }
 
@@ -319,9 +381,15 @@
         line-height: 20px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: $txt50;
+
         @media (max-width:$md) {
             font-size: 18px;
             line-height: 25px;
+        }
+
+        @media (max-width:$xs) {
+            font-size: 13px;
+            line-height: 140%;
         }
     }
 
@@ -348,5 +416,10 @@
         flex: none;
         background-repeat: no-repeat;
         background-size: contain;
+        @media (max-width:$xs) {
+            top: 20%;
+            left: 28%;
+            zoom: .6;
+        }
     }
 }

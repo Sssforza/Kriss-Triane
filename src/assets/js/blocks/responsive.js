@@ -1,6 +1,6 @@
 let md = 1024
 let xs = 540
-console.log('resp')
+
 let viewport = $('meta[name="viewport"]');
 
 if (window.screen.availWidth <= md || device.tablet()) {

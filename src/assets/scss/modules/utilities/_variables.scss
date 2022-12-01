@@ -29,6 +29,10 @@ $transition: all .3s;
 	@media (max-width:$md) {
 		padding: 0 20px;
 	}
+
+	@media (max-width:$xs) {
+		padding: 0 10px;
+	}
 }
 
 %link {
