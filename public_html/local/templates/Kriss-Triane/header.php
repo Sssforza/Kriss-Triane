@@ -139,15 +139,15 @@
                         <div class="popupStep__title">Вы&nbsp;хотите прийти один или&nbsp;в&nbsp;паре?</div>
                         <div class="popupStep__box">
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_11" type="radio" name="pair1" value="1" checked>
-                                <label class="envelopeRadio__label" for="pair_11">
+                                <input class="envelopeRadio__input" id="step_11" type="radio" name="step-1" value="one" checked>
+                                <label class="envelopeRadio__label" for="step_11">
                                     <span class="envelopeRadio__check"></span>
                                     Один
                                 </label>
                             </div>
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_12" type="radio" name="pair1" value="1">
-                                <label class="envelopeRadio__label" for="pair_12">
+                                <input class="envelopeRadio__input" id="step_12" type="radio" name="step-1" value="paired-with">
+                                <label class="envelopeRadio__label" for="step_12">
                                     <span class="envelopeRadio__check"></span>
                                     В паре
                                 </label>
@@ -158,14 +158,14 @@
                         <div class="popupStep__title">Вы придёте один или&nbsp;в&nbsp;паре?</div>
                         <div class="popupStep__box">
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_21" type="radio" name="pair2" value="1" checked>
-                                <label class="envelopeRadio__label" for="pair_21">
+                                <input class="envelopeRadio__input" id="step_21" type="radio" name="step-2" value="one">
+                                <label class="envelopeRadio__label" for="step_21">
                                     <span class="envelopeRadio__check"></span>
                                     Один
                                 </label>
                             </div>
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_22" type="radio" name="pair2" value="1">
+                                <input class="envelopeRadio__input" id="pair_22" type="radio" name="step-2" value="paired-with" checked>
                                 <label class="envelopeRadio__label" for="pair_22">
                                     <span class="envelopeRadio__check"></span>
                                     В паре
@@ -177,15 +177,15 @@
                         <div class="popupStep__title">Вы приходили один или&nbsp;в&nbsp;паре?</div>
                         <div class="popupStep__box">
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_31" type="radio" name="pair3" value="1" checked>
-                                <label class="envelopeRadio__label" for="pair_31">
+                                <input class="envelopeRadio__input" id="step_31" type="radio" name="step-3" value="one" checked>
+                                <label class="envelopeRadio__label" for="step_31">
                                     <span class="envelopeRadio__check"></span>
                                     Один
                                 </label>
                             </div>
                             <div class="envelopeRadio">
-                                <input class="envelopeRadio__input" id="pair_32" type="radio" name="pair3" value="1">
-                                <label class="envelopeRadio__label" for="pair_32">
+                                <input class="envelopeRadio__input" id="step_32" type="radio" name="step-3" value="paired-with">
+                                <label class="envelopeRadio__label" for="step_32">
                                     <span class="envelopeRadio__check"></span>
                                     В паре
                                 </label>

@@ -40,13 +40,14 @@ export function getDiscount() {
             envelope.forEach((item) => {
                 if (item.classList.contains('error')) {
                     valid = false
-                    console.log('no fetch')
                 } else {
                     valid = true
-                    console.log('fetch')
+                    fetch('/', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
                 }
             });
-            console.log(valid)
         })
     }
 }
@@ -69,13 +70,14 @@ export function formRequestCall() {
             envelope.forEach((item) => {
                 if (item.classList.contains('error')) {
                     valid = false
-                    console.log('no fetch')
                 } else {
                     valid = true
-                    console.log('fetch')
+                    fetch('/', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
                 }
             });
-            console.log(valid)
         })
     }
 }
@@ -98,13 +100,14 @@ export function popupStepForm() {
             envelope.forEach((item) => {
                 if (item.classList.contains('error')) {
                     valid = false
-                    console.log('no fetch')
                 } else {
                     valid = true
-                    console.log('fetch')
+                    fetch('/', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
                 }
             });
-            console.log(valid)
         })
     }
 }

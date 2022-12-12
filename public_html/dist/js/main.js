@@ -16425,13 +16425,14 @@ function getDiscount() {
       envelope.forEach(function (item) {
         if (item.classList.contains('error')) {
           valid = false;
-          console.log('no fetch');
         } else {
           valid = true;
-          console.log('fetch');
+          fetch('/', {
+            method: 'POST',
+            body: new FormData(form)
+          });
         }
       });
-      console.log(valid);
     });
   }
 } // form request call
@@ -16452,13 +16453,14 @@ function formRequestCall() {
       envelope.forEach(function (item) {
         if (item.classList.contains('error')) {
           valid = false;
-          console.log('no fetch');
         } else {
           valid = true;
-          console.log('fetch');
+          fetch('/', {
+            method: 'POST',
+            body: new FormData(form)
+          });
         }
       });
-      console.log(valid);
     });
   }
 } // form popup step
@@ -16479,13 +16481,14 @@ function popupStepForm() {
       envelope.forEach(function (item) {
         if (item.classList.contains('error')) {
           valid = false;
-          console.log('no fetch');
         } else {
           valid = true;
-          console.log('fetch');
+          fetch('/', {
+            method: 'POST',
+            body: new FormData(form)
+          });
         }
       });
-      console.log(valid);
     });
   }
 }
