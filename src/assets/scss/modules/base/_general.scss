@@ -217,6 +217,70 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+.envelopeRadio {
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    &__input[type=radio] {
+        display: none;
+
+        &:checked {
+
+            &+label {
+                pointer-events: none;
+
+                span:before {
+                    background: $blue;
+                }
+            }
+        }
+    }
+
+    &__label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $txt;
+        transition: $transition;
+        cursor: pointer;
+
+        &:hover {
+            color: $blue-hover;
+
+            span {
+                border: 1px solid $blue-hover;
+            }
+        }
+
+        span {
+            position: relative;
+            display: block;
+            width: 32px;
+            height: 32px;
+            border: 1px solid $blue;
+            border-radius: 50%;
+            transition: $transition;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                bottom: 8px;
+                left: 8px;
+                background: transparent;
+                border-radius: 50%;
+                transition: $transition;
+            }
+        }
+    }
+}
+
 .customScroll {
 
     &::before,
@@ -359,6 +423,7 @@ input[type="number"]::-webkit-outer-spin-button {
         background: $white;
         border-radius: 20px;
         z-index: 1;
+        overflow: hidden;
 
         @media (max-width:$xs) {
             padding: 30px 10px 30px;
@@ -503,6 +568,190 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+.popupSelection {
+    max-width: 488px;
+
+    &__img {
+        width: 100%;
+        height: 230px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__content {
+        padding: 35px 40px 54px;
+    }
+
+    &__btn {
+        margin: 30px auto 0;
+        width: 265px;
+    }
+
+    .popup__content {
+        padding: 0;
+
+        &::after,
+        &::before {
+            zoom: .7;
+        }
+
+        &::after {
+            left: -22px;
+            bottom: 40px;
+        }
+
+        &::before {
+            top: 404px;
+            right: -10px;
+        }
+    }
+}
+
+.popupStep {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $white;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+    transition: $transition;
+
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+    }
+
+    &::before {
+        width: 215px;
+        height: 223px;
+        top: 302px;
+        right: -30px;
+        zoom: .5;
+
+        background: {
+            image: url($imgUrl + "flowerRight.png");
+            repeat: no-repeat;
+        }
+    }
+
+    &::after {
+        width: 171px;
+        height: 127px;
+        left: 0;
+        bottom: 50px;
+        zoom: .7;
+
+        background: {
+            image: url($imgUrl + "formFlowerLeft.png");
+            repeat: no-repeat;
+        }
+    }
+
+    &__content {
+        padding: 40px 40px 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        transition: $transition;
+    }
+
+    &__container {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+
+        &.active {
+            position: relative;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        line-height: 31px;
+        text-align: center;
+        color: $txt;
+        font-family: 'Tenor Sans';
+    }
+
+    &__progressBar {
+        margin: 0 -40px;
+        height: 7px;
+        background: $f2;
+    }
+
+    &__progress {
+        display: block;
+        height: 100%;
+        background: $blue;
+        border-radius: 0px 3.5px 3.5px 0px;
+        transition: $transition;
+    }
+
+    &__btns {
+        margin: 30px auto 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.end {
+            .popupStep__btn_next {
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .popupStep__btn_fetch {
+                position: relative;
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+
+    &__btn {
+        width: 265px;
+
+        &_fetch {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            background: $txt;
+        }
+    }
+
+    &__count {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+        color: $txt50;
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__box {
+        margin-top: 40px;
+    }
+
+    &.covert {
+        opacity: 0;
+        pointer-events: none;
+        transition: $transition;
+    }
+}
+
 .message {
     display: none;
     align-items: center;
@@ -525,6 +774,7 @@ input[type="number"]::-webkit-outer-spin-button {
         flex-direction: column;
         height: 336px;
         width: 540px;
+        overflow: visible;
 
         @media (max-width:$xs) {
             padding: 30px 20px;

@@ -9,7 +9,7 @@
             <div class="banner__main">
                 <div class="banner__spa">SPA в&nbsp;Kriss Trianе</div>
                 <div class="banner__title">Идеальный отдых и&nbsp;минуты для себя!</div>
-                <div class="btn banner__btn">Выбрать программу</div>
+                <a href="#popupChooseProgram" class="btn banner__btn chooseProgram_js">Выбрать программу</a>
             </div>
             <div class="banner__list">
                 <div class="banner__item">

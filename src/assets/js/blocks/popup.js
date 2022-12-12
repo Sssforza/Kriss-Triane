@@ -14,6 +14,22 @@ export function requestCall() {
     }
 };
 
+// choose a program 
+export function chooseProgram () {
+    if (document.querySelector('.chooseProgram_js')) {
+        $('.chooseProgram_js').magnificPopup({
+            type: 'inline',
+            tClose: 'Закрыть (Esc)',
+            tLoading: 'Загрузка...',
+            fixedContentPos: true,
+        });
+        $(document).on('click', '.popupClose_js', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    }
+};
+
 // popup youtube
 export function popupYoutube () {
     const popupYoutube = $(".popupYoutube_js");

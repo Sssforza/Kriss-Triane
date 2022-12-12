@@ -391,9 +391,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_responsive__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_responsive__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _blocks_header_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 /* harmony import */ var _blocks_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
-/* harmony import */ var _blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
-/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
-/* harmony import */ var _blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13);
+/* harmony import */ var _blocks_step_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(11);
+/* harmony import */ var _blocks_validations_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
+/* harmony import */ var _blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(13);
+/* harmony import */ var _blocks_popup_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(14);
 //📁 /node_modules/  jquery 
 
 global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁 /node_modules/  slick 1.8.1
@@ -408,6 +409,8 @@ global.jQuery = global.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a; //📁
 
  //📁 /assets/js/blocks  validations
 
+ //📁 /assets/js/blocks  validations
+
  //📁 /assets/js/blocks  slick
 
  //📁 /assets/js/popup  magnific-popup
@@ -417,17 +420,20 @@ document.addEventListener("DOMContentLoaded", function () {
   Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_4__["hamburgerMenu"])();
   Object(_blocks_header_js__WEBPACK_IMPORTED_MODULE_4__["headerFixed"])();
   Object(_blocks_index_js__WEBPACK_IMPORTED_MODULE_5__["programsContentChange"])();
-  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__["getDiscount"])();
-  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_6__["formRequestCall"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_personal"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_forTwo"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_individual"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["programsSliider_premium"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["reviewsSliider"])();
-  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_7__["specialistSliider"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["requestCall"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["messageThanks"])();
-  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_8__["popupYoutube"])();
+  Object(_blocks_step_js__WEBPACK_IMPORTED_MODULE_6__["popupStep"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_7__["getDiscount"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_7__["formRequestCall"])();
+  Object(_blocks_validations_js__WEBPACK_IMPORTED_MODULE_7__["popupStepForm"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["programsSliider_personal"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["programsSliider_forTwo"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["programsSliider_individual"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["programsSliider_premium"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["reviewsSliider"])();
+  Object(_blocks_slick_js__WEBPACK_IMPORTED_MODULE_8__["specialistSliider"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_9__["requestCall"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_9__["chooseProgram"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_9__["messageThanks"])();
+  Object(_blocks_popup_js__WEBPACK_IMPORTED_MODULE_9__["popupYoutube"])();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(4)))
 
@@ -16323,8 +16329,61 @@ function programsContentChange() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "popupStep", function() { return popupStep; });
+// popup step
+function popupStep() {
+  if (document.querySelector(".popupStep_js")) {
+    var begin = document.querySelector(".popupSelectionBegin_js");
+    var parent = document.querySelector(".popupStep_js");
+    var container = parent.querySelectorAll(".popupStepContainer_js");
+    var containerLength = container.length;
+    var btnParent = parent.querySelector(".popupStepBtns_js");
+    var btnNext = parent.querySelector(".popupStepNext_js");
+    var countCurrent = parent.querySelector(".popupStepCurrent_js");
+    var countTotal = parent.querySelector(".popupStepTotal_js");
+    var stepProgress = parent.querySelector(".popupStepProgress_js");
+    var progress = 100 / containerLength + 1;
+    var current;
+    var nextCurrent;
+    stepProgress.style.width = progress + "%";
+    countTotal.innerHTML = containerLength;
+    begin.addEventListener("click", function () {
+      parent.classList.remove('covert');
+    });
+    btnNext.addEventListener("click", function () {
+      container.forEach(function (item) {
+        if (item.classList.contains('active')) {
+          current = item.getAttribute('data-step');
+          item.classList.remove('active');
+          nextCurrent = Number(current) + Number(1);
+        }
+
+        if (nextCurrent <= containerLength) {
+          stepProgress.style.width = progress * nextCurrent + "%";
+
+          if (Number(item.getAttribute('data-step')) === nextCurrent) {
+            item.classList.add('active');
+            countCurrent.innerHTML = nextCurrent;
+          }
+        }
+
+        if (nextCurrent >= containerLength) {
+          btnParent.classList.add('end');
+        }
+      });
+    });
+  }
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDiscount", function() { return getDiscount; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formRequestCall", function() { return formRequestCall; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "popupStepForm", function() { return popupStepForm; });
 function removeError(errors) {
   for (var i = 0; i < errors.length; i++) {
     errors[i].classList.remove('error');
@@ -16340,7 +16399,7 @@ function checkFields(fields) {
 }
 
 function validatePhone(input) {
-  if (input.value.length < 18) {
+  if (input.value.length < 11) {
     input.parentNode.classList.add('error');
     return false;
   } else {
@@ -16402,10 +16461,37 @@ function formRequestCall() {
       console.log(valid);
     });
   }
+} // form popup step
+
+function popupStepForm() {
+  if (document.querySelector('.popupStepForm_js')) {
+    var form = document.querySelector('.popupStepForm_js');
+    var input = form.querySelector('.tel');
+    var fields = form.querySelectorAll('.fileds_js');
+    var envelope = form.querySelectorAll('.envelopeInput');
+    var valid;
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var errors = form.querySelectorAll('.error');
+      removeError(errors);
+      checkFields(fields);
+      validatePhone(input);
+      envelope.forEach(function (item) {
+        if (item.classList.contains('error')) {
+          valid = false;
+          console.log('no fetch');
+        } else {
+          valid = true;
+          console.log('fetch');
+        }
+      });
+      console.log(valid);
+    });
+  }
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16604,18 +16690,35 @@ function specialistSliider() {
 ;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestCall", function() { return requestCall; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "chooseProgram", function() { return chooseProgram; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "popupYoutube", function() { return popupYoutube; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "messageThanks", function() { return messageThanks; });
 // request a call
 function requestCall() {
   if (document.querySelector('.requestCall_js')) {
     $('.requestCall_js').magnificPopup({
+      type: 'inline',
+      tClose: 'Закрыть (Esc)',
+      tLoading: 'Загрузка...',
+      fixedContentPos: true
+    });
+    $(document).on('click', '.popupClose_js', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+    });
+  }
+}
+; // choose a program 
+
+function chooseProgram() {
+  if (document.querySelector('.chooseProgram_js')) {
+    $('.chooseProgram_js').magnificPopup({
       type: 'inline',
       tClose: 'Закрыть (Esc)',
       tLoading: 'Загрузка...',

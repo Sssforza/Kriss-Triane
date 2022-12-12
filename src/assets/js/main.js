@@ -18,23 +18,29 @@ import { hamburgerMenu, headerFixed } from "./blocks/header.js";
 import { programsContentChange } from "./blocks/index.js";
 
 //📁 /assets/js/blocks  validations
-import { getDiscount, formRequestCall } from "./blocks/validations.js";
+import { popupStep } from "./blocks/step.js";
+
+//📁 /assets/js/blocks  validations
+import { getDiscount, formRequestCall, popupStepForm } from "./blocks/validations.js";
 
 //📁 /assets/js/blocks  slick
 import { programsSliider_personal, programsSliider_forTwo, programsSliider_individual, programsSliider_premium, reviewsSliider, specialistSliider } from "./blocks/slick.js";
 
 //📁 /assets/js/popup  magnific-popup
-import { requestCall, messageThanks, popupYoutube } from "./blocks/popup.js";
+import { requestCall, chooseProgram, messageThanks, popupYoutube } from "./blocks/popup.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     hamburgerMenu();
     headerFixed();
 
     programsContentChange();
 
+    popupStep();
+
     getDiscount();
     formRequestCall();
+    popupStepForm();
 
     programsSliider_personal();
     programsSliider_forTwo();
@@ -44,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     specialistSliider();
 
     requestCall();
+    chooseProgram();
     messageThanks();
     popupYoutube();
 

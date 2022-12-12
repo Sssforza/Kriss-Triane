@@ -95,10 +95,10 @@
             </div>
         </div>
         <div class="popup white-popup mfp-hide" id="popupRequestCall">
+            <div class="popup__close popupClose_js">
+                <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
+            </div>
             <div class="popup__content">
-                <div class="popup__close popupClose_js">
-                    <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
-                </div>
                 <div class="popup__title">Заказать звонок</div>
                 <div class="popup__description">Заполните форму, и&nbsp;мы&nbsp;перезвоним <br>вам в&nbsp;ближайшее время</div>
                 <form action="" class="discount__form form formRequestCall_js">
@@ -118,6 +118,117 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="popup popupSelection white-popup mfp-hide" id="popupChooseProgram">
+            <div class="popup__close popupClose_js">
+                <?include $_SERVER['DOCUMENT_ROOT'] . '/dist/img/svg/popupClose.svg';?>
+            </div>
+            <div class="popup__content">
+                <div class="popupSelection__img" style="background-image:url(/dist/img/popupSelection.jpg)"></div>
+                <div class="popupSelection__content">
+                    <div class="popup__title">Подберем идеальную SPA-программу</div>
+                    <div class="popup__description">
+                        Ответьте на&nbsp;пару вопросов, и&nbsp;мы&nbsp;подберем для вас наиболее подходящюю программу
+                    </div>
+                    <div class="btn popupSelection__btn popupSelectionBegin_js">Начать</div>
+                </div>
+            </div>
+            <div class="popupStep popupStep_js covert">
+                <form class="popupStep__content popupStepForm_js">
+                    <div class="popupStep__container popupStepContainer_js active" data-step="1">
+                        <div class="popupStep__title">Вы&nbsp;хотите прийти один или&nbsp;в&nbsp;паре?</div>
+                        <div class="popupStep__box">
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_11" type="radio" name="pair1" value="1" checked>
+                                <label class="envelopeRadio__label" for="pair_11">
+                                    <span class="envelopeRadio__check"></span>
+                                    Один
+                                </label>
+                            </div>
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_12" type="radio" name="pair1" value="1">
+                                <label class="envelopeRadio__label" for="pair_12">
+                                    <span class="envelopeRadio__check"></span>
+                                    В паре
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupStep__container popupStepContainer_js" data-step="2">
+                        <div class="popupStep__title">Вы придёте один или&nbsp;в&nbsp;паре?</div>
+                        <div class="popupStep__box">
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_21" type="radio" name="pair2" value="1" checked>
+                                <label class="envelopeRadio__label" for="pair_21">
+                                    <span class="envelopeRadio__check"></span>
+                                    Один
+                                </label>
+                            </div>
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_22" type="radio" name="pair2" value="1">
+                                <label class="envelopeRadio__label" for="pair_22">
+                                    <span class="envelopeRadio__check"></span>
+                                    В паре
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupStep__container popupStepContainer_js" data-step="3">
+                        <div class="popupStep__title">Вы приходили один или&nbsp;в&nbsp;паре?</div>
+                        <div class="popupStep__box">
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_31" type="radio" name="pair3" value="1" checked>
+                                <label class="envelopeRadio__label" for="pair_31">
+                                    <span class="envelopeRadio__check"></span>
+                                    Один
+                                </label>
+                            </div>
+                            <div class="envelopeRadio">
+                                <input class="envelopeRadio__input" id="pair_32" type="radio" name="pair3" value="1">
+                                <label class="envelopeRadio__label" for="pair_32">
+                                    <span class="envelopeRadio__check"></span>
+                                    В паре
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupStep__container popupStepContainer_js" data-step="4">
+                        <div class="popupStep__title">Форма</div>
+                        <div class="popupStep__box">
+                            <div class="discount__form form">
+                                <div class="discount__fileds">
+                                    <div class="envelopeInput">
+                                        <input type="text" name="user_name" placeholder="Имя" class="fileds_js">
+                                        <span class="envelopeInput__warning">Введите корректное имя</span>
+                                    </div>
+                                    <div class="envelopeInput">
+                                        <input type="number" name="user_telefon" placeholder="Телефон" class="fileds_js tel">
+                                        <span class="envelopeInput__warning">Введите корректный телефон</span>
+                                    </div>
+                                </div>
+                                <div class="discount__privacy">
+                                    Нажимая &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь с&nbsp;условиями <br><a href="#">политики&nbsp;конфиденциальности</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popupStep__bottom">
+                        <div class="popupStep__progressBar">
+                            <span class="popupStep__progress popupStepProgress_js" style=""></span>
+                        </div>
+                        <div class="popupStep__btns popupStepBtns_js">
+                            <div class="btn popupStep__btn popupStep__btn_next popupStepNext_js">Далее</div>
+                            <button class="btn popupStep__btn popupStep__btn_fetch popupStepFetch_js">Отправить</button>
+                        </div>
+                        <div class="popupStep__count">
+                            <span class="popupStep__current popupStepCurrent_js">1</span>
+                            <span class="popupStep__from"> из </span>
+                            <span class="popupStep__total popupStepTotal_js"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
         </div>
         <!-- чтобы вывести сообщение к body надо добавить класс messageThanks -->
         <div class="popup message messageThanks_js">
